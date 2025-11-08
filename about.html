@@ -17,7 +17,16 @@
         <img src="Asset 1.png" alt="Home2BNB Logo" />
       </a>
 
-      <nav class="nav-menu">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav class="nav-menu" id="primary-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li class="is-active"><a href="about.html">About</a></li>
@@ -202,5 +211,6 @@
     },{threshold:0.15});
     document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
   </script>
+  <script src="script.js"></script>
 </body>
 </html>

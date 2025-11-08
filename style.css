@@ -5,7 +5,6 @@
 
 :root {
   --brand-peach: #f3d8cd;
-  --brand-peach-soft: #f8e8e0;
   --brand-sage: #7a8581;
   --ink: #111827;
   --ink-2: #4b5563;
@@ -688,25 +687,14 @@ section {
 
 .info-card .info-row {
   display: grid;
-  grid-template-columns: 52px 1fr;
-  gap: 16px;
+  grid-template-columns: 36px 1fr;
+  gap: 12px;
   align-items: start;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .info-card .icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--brand-peach-soft);
-  color: var(--brand-sage);
-  display: grid;
-  place-items: center;
-  box-shadow: var(--shadow-soft);
-}
-
-.info-card .icon i {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
 }
 
 .info-card .label {
@@ -739,22 +727,9 @@ section {
 }
 
 .social-pill:hover {
+  background: var(--brand-sage);
+  color: #fff;
   transform: translateY(-2px);
-}
-
-.social-pill.facebook:hover {
-  background: #1877f2;
-  color: #fff;
-}
-
-.social-pill.instagram:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-  color: #fff;
-}
-
-.social-pill.hostfully:hover {
-  background: #4f46e5;
-  color: #fff;
 }
 
 .map iframe {

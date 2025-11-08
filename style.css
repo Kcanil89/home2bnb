@@ -484,8 +484,8 @@ section {
 }
 
 .card .icon {
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   border-radius: 14px;
   display: grid;
   place-items: center;

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • HOME2BNB</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+   <!-- ===================== HEADER ===================== -->
+   <header class="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="Asset 1.png" alt="Home2BNB Logo" />
+      </a>
+  
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn btn-sage" href="https://book.hostfully.com/home2bnb">Book a Stay</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=2000&auto=format&fit=crop');"></div>
+    <div class="container hero-inner">
+      <h1>Let’s talk</h1>
+      <p>We help owners earn more with hands-off hosting — and give guests a stay that feels like home.</p>
+    </div>
+    <div class="hero-divider" aria-hidden="true"></div>
+  </section>
+
+  <!-- Contact Grid -->
+  <section class="contact">
+    <div class="container contact-grid">
+      <!-- Form Column -->
+      <div class="card form-card">
+        <h2>Send us a message</h2>
+        <p class="muted">Tell us about your property or enquiry and we’ll get back to you shortly.</p>
+
+        <!-- ✅ Drop your WPForms here -->
+        <!-- If using WordPress, replace the block below with: [wpforms id="8"] -->
+        <div class="wpforms-slot">
+          <!-- Placeholder form (non-WP) for static preview. Remove on WP and use your shortcode. -->
+          <form class="h2b-form" action="#" method="post" novalidate>
+            <div class="grid-2">
+              <label>
+                <span>Your Name *</span>
+                <input type="text" name="name" required>
+              </label>
+              <label>
+                <span>Email *</span>
+                <input type="email" name="email" required>
+              </label>
+            </div>
+            <label>
+              <span>Contact number (optional)</span>
+              <input type="text" name="phone" inputmode="tel">
+            </label>
+            <label>
+              <span>Investment Property Address (optional)</span>
+              <input type="text" name="address">
+            </label>
+            <label>
+              <span>Your Message *</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="btn btn-sage" type="submit">Submit</button>
+          </form>
+
+          <!-- Styling hook so your existing WPForms #8 inherits the new look automatically -->
+          <!-- When using WPForms, ensure the outer container keeps id="wpforms-8" -->
+        </div>
+      </div>
+
+      <!-- Info Column -->
+      <aside class="card info-card">
+        <h2>Contact details</h2>
+
+        <div class="info-row">
+          <div class="icon" aria-hidden="true">✉️</div>
+          <div>
+            <div class="label">Email</div>
+            <a href="mailto:stay@home2bnb.com.au">stay@home2bnb.com.au</a>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="icon" aria-hidden="true">📞</div>
+          <div>
+            <div class="label">Phone</div>
+            <a href="tel:+61411880646">+61 411 880 646</a>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="icon" aria-hidden="true">📍</div>
+          <div>
+            <div class="label">Location</div>
+            <p class="no-gap">Perth, Western Australia</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="info-row">
+          <div class="icon" aria-hidden="true">🕒</div>
+          <div>
+            <div class="label">Hours</div>
+            <p class="no-gap">Mon–Fri: 9:00–17:00 AWST</p>
+            <p class="no-gap">Weekends by appointment</p>
+          </div>
+        </div>
+
+        <div class="social">
+            <a class="social-pill " href="https://www.facebook.com/Home2BnB-582010922285345/" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="social-pill " href="https://www.instagram.com/home2bnb/" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="social-pill " href="https://book.hostfully.com/home2bnb" target="_blank" aria-label="Book">
+              <i class="fas fa-book"></i>
+            </a>
+          </div>
+          
+      </aside>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="map">
+    <div class="container">
+      <div class="card map-card">
+        <iframe
+          title="HOME2BNB Perth"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Perth%20WA&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BEAUTIFUL CTA ===================== -->
+<section class="cta">
+    <div class="cta-bg"
+         style="background-image:url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=2000&q=80')">
+    </div>
+    <div class="cta-inner container">
+      <h2>Ready to unlock your property’s potential?</h2>
+      <p class="subtitle">Get a tailored revenue appraisal and a seamless plan to launch — or level up — your short-stay.</p>
+      <div class="cta-actions">
+        <a class="btn btn-sage" href="mailto:stay@home2bnb.com.au"><i class="fas fa-envelope"></i> Request Appraisal</a>
+        <a class="btn btn-peach" href="tel:+61411880646"><i class="fas fa-phone"></i> Call +61 411 880 646</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===================== BEAUTIFUL FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="Asset 2.png"
+             alt="Home2BNB Logo" class="footer-logo">
+      </div>
+  
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-col">
+        <h5>For Owners</h5>
+        <ul>
+          <li><a href="mailto:stay@home2bnb.com.au">Revenue Appraisal</a></li>
+          <li><a href="services.html">Onboarding</a></li>
+          <li><a href="services.html">Operations</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:stay@home2bnb.com.au">stay@home2bnb.com.au</a></li>
+          <li><a href="tel:+61411880646">+61 411 880 646</a></li>
+          <li>Perth, Western Australia</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2025 Home2BNB. All rights reserved.</span>
+        <span class="sep">•</span>
+        <a href="#">Privacy Policy</a>
+        <span class="sep">•</span>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

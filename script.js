@@ -1,4 +1,5 @@
-(function () {
+
+document.addEventListener('DOMContentLoaded', function () {
   const navToggle = document.querySelector('.nav-toggle');
   const navMenu = document.querySelector('.nav-menu');
   if (!navToggle || !navMenu) return;
@@ -22,14 +23,14 @@
 
   navMenu.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-      if (navToggle.offsetParent === null) return; // menu hidden on desktop
+      // Only close on mobile (when toggle is visible)
+      if (window.getComputedStyle(navToggle).display === 'none') return;
       closeMenu();
     });
   });
 
+  // Sync with your CSS breakpoint (768px here)
   window.addEventListener('resize', () => {
-    if (window.matchMedia('(min-width: 761px)').matches) {
-      closeMenu();
-    }
+    if (window.matchMedia('(min-width: 768px)').matches) closeMenu();
   });
-})();
+});

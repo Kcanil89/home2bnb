@@ -1269,3 +1269,52 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+/* A11y helper */
+.sr-only{
+  position:absolute !important; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
+/* Toggle button: hidden on desktop, visible on mobile */
+.nav-toggle{
+  display:none; appearance:none; background:transparent; border:0; padding:8px;
+}
+.nav-toggle:focus{ outline:2px solid #7A8581; outline-offset:2px; }
+
+/* Simple hamburger */
+.nav-toggle-icon{ display:inline-grid; gap:5px; }
+.nav-toggle-icon span{
+  display:block; width:26px; height:2px; background:#7A8581; border-radius:2px;
+}
+
+/* Desktop: keep your current inline layout */
+@media (min-width: 768px){
+  .nav-menu{ position:static; opacity:1; max-height:none; pointer-events:auto; }
+  .nav-menu ul{ display:flex; gap:18px; }
+}
+
+/* Mobile: collapsed by default */
+@media (max-width: 767.98px){
+  .nav-toggle{ display:block; }
+
+  .nav-menu{
+    position:absolute; left:0; right:0; top:100%;
+    background:#fff;
+    border-top:1px solid rgba(0,0,0,.06);
+    box-shadow:0 10px 24px rgba(0,0,0,.08);
+    max-height:0; overflow:hidden; opacity:0; pointer-events:none;
+    transition:max-height .3s ease, opacity .25s ease;
+    z-index:999;
+  }
+  .nav-menu ul{
+    display:grid; gap:10px;
+    padding:14px 18px; margin:0; list-style:none;
+  }
+  .nav-menu.is-open{
+    max-height:70vh; opacity:1; pointer-events:auto;
+  }
+
+  /* Prevent background scroll when menu open */
+  body.nav-open{ overflow:hidden; }
+}

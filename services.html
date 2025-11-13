@@ -301,11 +301,12 @@
   </footer>
 
 
-  <!-- Tiny JS: rolling cards + reveal -->
+  <!-- Tiny JS: rolling cards -->
   <script>
     // Auto-cycle "How it works" cards
     (function () {
       const cards = [...document.querySelectorAll('.step-card')];
+      if (!cards.length) return;
       let i = 0;
       setInterval(() => {
         cards.forEach(c => c.classList.remove('active'));
@@ -313,14 +314,6 @@
         i++;
       }, 3200);
     })();
-
-    // Reveal on scroll
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){ e.target.classList.add('in'); observer.unobserve(e.target); }
-      });
-    },{threshold:0.15});
-    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
   </script>
   <style>
     /* small visual emphasis when a step-card is "active" */

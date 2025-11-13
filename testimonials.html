@@ -4,31 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Testimonials – Home2BNB</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=20240606" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=20240526" />
 </head>
 <body>
   <header class="main-header">
-    <div class="container header-container">
-      <a href="index.html" class="logo" aria-label="Home2BNB home">
-        <img src="Asset 1.png" alt="Home2BNB logo" />
-        <div class="logo-text">
-          <span class="logo-name">Home2BNB</span>
-          <span class="logo-tagline">Hospitality-led property management</span>
-        </div>
-      </a>
-
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="Asset 1.png" alt="Home2BNB" /></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
-        <span class="nav-toggle-icon" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-icon"></span>
       </button>
-
       <nav class="nav-menu" id="primary-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -37,141 +23,129 @@
           <li class="is-active"><a href="testimonials.html">Testimonials</a></li>
           <li><a href="faqs.html">FAQs</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li class="cta"><a class="btn btn-primary" href="https://book.hostfully.com/home2bnb">List your property</a></li>
+          <li><a class="btn btn-primary" href="https://book.hostfully.com/home2bnb">Book a Stay</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
-      <div class="container page-hero__inner">
-        <div>
-          <span class="pill">Testimonials</span>
-          <h1>Owners and guests who feel genuinely cared for</h1>
-          <p>Our boutique approach is grounded in hospitality and transparent partnership. Here’s what our community has to say.</p>
-        </div>
-        <div class="page-hero__visual" style="background-image:url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1600&q=80');"></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section__head">
-          <span class="pill">Owners</span>
-          <h2>Partnership stories</h2>
-          <p class="section__lead">Property investors trust us to balance revenue, care and guest satisfaction.</p>
-        </div>
-        <div class="testimonial-grid">
-          <article class="testimonial-card reveal">
-            <div class="quote">“Bookings and returns have exceeded projections every quarter. Home2BNB communicates proactively and keeps our home immaculate.”</div>
-            <div class="meta">
-              <div>Robert K.</div>
-              <span>Owner • Fremantle Warehouse Loft</span>
-            </div>
-          </article>
-          <article class="testimonial-card reveal" style="--reveal-delay: 120ms;">
-            <div class="quote">“I finally feel hands-off without anxiety. Their reporting, responsiveness and local knowledge are exceptional.”</div>
-            <div class="meta">
-              <div>Alisha D.</div>
-              <span>Owner • Cottesloe Coastal Retreat</span>
-            </div>
-          </article>
-          <article class="testimonial-card reveal" style="--reveal-delay: 240ms;">
-            <div class="quote">“They styled, launched and optimised everything in under four weeks. Occupancy is up 30% year-on-year.”</div>
-            <div class="meta">
-              <div>Michael P.</div>
-              <span>Owner • Swan Valley Vineyard Escape</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--soft">
-      <div class="container">
-        <div class="section__head">
-          <span class="pill">Guests</span>
-          <h2>Memorable stays, repeat visits</h2>
-          <p class="section__lead">Guests feel the difference when every detail is intentional. We craft experiences that inspire glowing reviews.</p>
-        </div>
-        <div class="testimonial-grid">
-          <article class="testimonial-card reveal">
-            <div class="quote">“Everything felt brand new. The digital guide was incredibly helpful and the team checked in without being intrusive.”</div>
-            <div class="meta">
-              <div>Sarah L.</div>
-              <span>Guest • Family stay in Scarborough</span>
-            </div>
-          </article>
-          <article class="testimonial-card reveal" style="--reveal-delay: 120ms;">
-            <div class="quote">“Five-star hotel service with the warmth of a private residence. We extended our booking because it was so effortless.”</div>
-            <div class="meta">
-              <div>Charlotte &amp; Liam</div>
-              <span>Guests • Executive relocation</span>
-            </div>
-          </article>
-          <article class="testimonial-card reveal" style="--reveal-delay: 240ms;">
-            <div class="quote">“From the welcome hamper to local recommendations, the experience felt curated just for us.”</div>
-            <div class="meta">
-              <div>Daniela V.</div>
-              <span>Guest • Long-weekend retreat</span>
-            </div>
-          </article>
+    <section class="hero hero-subpage">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="hero-tag">Testimonials</span>
+          <h1>The kind of feedback that fuels us.</h1>
+          <p>Owners trust us with their assets. Guests trust us with their escapes. Here’s what they say about their Home2BNB experience.</p>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container content-grid content-grid--two">
-        <div>
-          <span class="pill">Let’s collaborate</span>
-          <h2>Your property, our hospitality</h2>
-          <p>We’d love to craft a plan tailored to your goals and property type. Tell us how we can support you and we’ll share ideas within 24 hours.</p>
-          <a class="btn btn-primary" href="mailto:stay@home2bnb.com.au">Request an appraisal</a>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Owners</span>
+          <h2>Investments protected, returns elevated</h2>
+          <p>Our owner partners appreciate transparency, responsiveness and thoughtful execution—qualities we consider non-negotiable.</p>
         </div>
-        <div class="card highlight-band">
-          <h3>What to expect</h3>
-          <ul>
-            <li>Personalised revenue forecast.</li>
-            <li>Styling and setup recommendations.</li>
-            <li>Launch timeline and next steps.</li>
-          </ul>
-          <a class="text-link" href="contact.html">Contact the team <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial">
+            <p>“The team provided a detailed revenue appraisal and delivered on it. Our property is beautifully maintained and consistently books premium guests.”</p>
+            <cite>Angela &amp; Tim — City Penthouse Owners</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>“We moved from a larger operator and immediately noticed the difference. Communication is proactive, the numbers are up and the guest reviews speak for themselves.”</p>
+            <cite>Hayley — Subiaco Townhome Owner</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>“Home2BNB feel like an extension of our family. They handle everything with integrity and make owning a short-stay property effortless.”</p>
+            <cite>Marcus &amp; Elise — Coastal Residence Owners</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Guests</span>
+          <h2>Stays that feel thoughtfully curated</h2>
+          <p>Five-star experiences come from the little moments: local tips, hand-picked amenities and support when it matters.</p>
+        </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial">
+            <p>“Every detail was considered—from the locally roasted coffee to the curated guidebook. It felt like staying at a friend’s designer home.”</p>
+            <cite>Riley — Fremantle Loft Guest</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>“Check-in was seamless, the concierge organised a private chef and the team checked in daily without being intrusive. We’ll be back.”</p>
+            <cite>Sanjay — Swan River Modernist Guest</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>“Traveling with toddlers is usually stressful, but Home2BNB arranged everything we needed before arrival. We extended our stay on the spot.”</p>
+            <cite>Olivia — Cottesloe Villa Guest</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-section">
+        <div class="copy">
+          <span class="section-label">Recognition</span>
+          <h3>Consistently rated five stars across premium channels.</h3>
+          <p>Our review average sits at 4.9/5 across Airbnb, Booking.com and VRBO. It’s the by-product of rigorous standards and a dedication to hospitality.</p>
+          <div class="feature-list">
+            <div class="feature-item">Personalised welcome sequences for every arrival.</div>
+            <div class="feature-item">Professional housekeeping with photographed checklists.</div>
+            <div class="feature-item">Guest feedback loops that inform continuous improvements.</div>
+          </div>
+        </div>
+        <figure class="media">
+          <img src="https://images.unsplash.com/photo-1512914890250-353c97c9e6b4?auto=format&fit=crop&w=1200&q=80" alt="Guests enjoying a curated stay" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-label="CTA">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Let’s create your next five-star review.</h2>
+            <p>Whether you’re ready to list or want an honest assessment, we’re here to help you design an experience worth talking about.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-light" href="mailto:stay@home2bnb.com.au"><i class="fa-solid fa-envelope"></i> Start the conversation</a>
+            <a class="btn btn-outline" href="contact.html"><i class="fa-solid fa-message"></i> Enquire now</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer__grid">
-      <div class="footer__brand">
-        <a href="index.html" class="logo">
-          <img src="Asset 2.png" alt="Home2BNB secondary logo" />
-          <div class="logo-text">
-            <span class="logo-name">Home2BNB</span>
-            <span class="logo-tagline">Boutique property management</span>
-          </div>
-        </a>
-        <p>Premium short-stay management across Perth and beyond.</p>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="Asset 2.png" alt="Home2BNB" class="footer-logo" />
+        <p>Perth’s boutique team crafting exceptional short-stay experiences and dependable investment returns.</p>
       </div>
-      <div class="footer__column">
-        <h4>Company</h4>
+      <div class="footer-col">
+        <h5>Company</h5>
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
         </ul>
       </div>
-      <div class="footer__column">
-        <h4>Resources</h4>
+      <div class="footer-col">
+        <h5>For Owners</h5>
         <ul>
-          <li><a href="faqs.html">FAQs</a></li>
-          <li><a href="services.html#pricing">Pricing</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#services">Management Approach</a></li>
+          <li><a href="services.html">Revenue Strategy</a></li>
+          <li><a href="faqs.html">Frequently Asked Questions</a></li>
         </ul>
       </div>
-      <div class="footer__column">
-        <h4>Get in touch</h4>
+      <div class="footer-col">
+        <h5>Connect</h5>
         <ul>
           <li><a href="mailto:stay@home2bnb.com.au">stay@home2bnb.com.au</a></li>
           <li><a href="tel:+61411880646">+61 411 880 646</a></li>
@@ -179,17 +153,16 @@
         </ul>
       </div>
     </div>
-    <div class="footer__bottom">
-      <div class="container">
-        <span>© 2025 Home2BNB. All rights reserved.</span>
-        <nav aria-label="Legal links">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-        </nav>
-      </div>
+    <div class="container footer-bottom">
+      <span>© 2025 Home2BNB. All rights reserved.</span>
+      <span>
+        <a href="#">Privacy Policy</a>
+        <span>•</span>
+        <a href="#">Terms of Use</a>
+      </span>
     </div>
   </footer>
 
-  <script src="script.js?v=20240606"></script>
+  <script src="script.js"></script>
 </body>
 </html>

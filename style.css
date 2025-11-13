@@ -866,6 +866,7 @@ form textarea {
   .nav-menu.is-open {
     transform: translateY(0);
   }
+}
 
   .nav-menu ul {
     flex-direction: column;
@@ -913,4 +914,13 @@ form textarea {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+.nav-toggle.is-active .nav-toggle-icon span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+.nav-toggle.is-active .nav-toggle-icon span:nth-child(2){ opacity:0; }
+.nav-toggle.is-active .nav-toggle-icon span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+
+.nav-toggle-icon span{
+  transition:transform .24s ease, opacity .2s ease;
+  transform-origin:center;
 }

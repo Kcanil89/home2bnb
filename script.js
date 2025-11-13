@@ -7,7 +7,15 @@ document.addEventListener('DOMContentLoaded', function () {
   const closeMenu = () => {
     navMenu.classList.remove('is-open');
     document.body.classList.remove('nav-open');
+    navToggle.classList.remove('is-active');
     navToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  const openMenu = () => {
+    navMenu.classList.add('is-open');
+    document.body.classList.add('nav-open');
+    navToggle.classList.add('is-active');
+    navToggle.setAttribute('aria-expanded', 'true');
   };
 
   navToggle.addEventListener('click', () => {
@@ -15,9 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (isExpanded) {
       closeMenu();
     } else {
-      navMenu.classList.add('is-open');
-      document.body.classList.add('nav-open');
-      navToggle.setAttribute('aria-expanded', 'true');
+      openMenu();
     }
   });
 

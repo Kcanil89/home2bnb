@@ -3,26 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home2BNB — Premium Stays & Property Management</title>
-
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
-   <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
+  <title>Home2BNB — Hospitality-led Property Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="boutique-theme.css" />
 </head>
 <body>
- <!-- ===================== HEADER ===================== -->
-<header class="main-header">
+  <header class="main-header">
     <div class="container header-container">
-      <a href="index.html" class="logo">
-        <img src="Asset 1.png" alt="Home2BNB Logo" />
+      <a href="index.html" class="logo" aria-label="Home2BNB home">
+        <img src="Asset 1.png" alt="Home2BNB logo" />
+        <div class="logo-text">
+          <span class="logo-name">Home2BNB</span>
+          <span class="logo-tagline">Hospitality-led property management</span>
+        </div>
       </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
-        <span class="sr-only">Menu</span>
         <span class="nav-toggle-icon" aria-hidden="true">
           <span></span>
           <span></span>
@@ -32,271 +31,208 @@
 
       <nav class="nav-menu" id="primary-menu">
         <ul>
-          <li class="is-active" ><a href="index.html">Home</a></li>
+          <li class="is-active"><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="faqs.html">FAQs</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a class="btn btn-sage" href="https://book.hostfully.com/home2bnb">Book a Stay</a></li>
+          <li class="cta"><a class="btn btn-primary" href="https://book.hostfully.com/home2bnb">List your property</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- ===================== HERO ===================== -->
-  <section class="hero" aria-label="Premium stays and property management">
-    <div class="bg parallax" style="background-image:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=2000&q=80')"></div>
-    <div class="content container">
-      <h1>Exceptionally Managed Stays. Effortless Ownership.</h1>
-      <p>From styling to 24/7 guest care, we turn great homes into unforgettable experiences — and investments into reliable returns.</p>
-      <div class="cta-inline">
-        <a class="btn btn-primary" href="#services">Explore Management</a>
-        <a class="btn btn-ghost" href="contact.html">Talk to Us</a>
-      </div>
-    </div>
-    <div class="divider-bottom">
-      <svg viewBox="0 0 100 8" preserveAspectRatio="none"><polygon points="0,0 100,8 0,8"></polygon></svg>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="pill">Premium short-stay specialists</span>
+          <h1>Hospitality-led property management for effortless returns</h1>
+          <p class="lead">We style, launch and operate design-led homes with hotel-level service, transparent reporting and consistent performance for discerning owners.</p>
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="contact.html">Talk with our team</a>
+            <a class="btn btn-ghost" href="services.html">See how it works</a>
+          </div>
 
-  <!-- ROLLING 3-LINK BAND WITH IMAGES -->
-<section id="quick-actions" class="quick-band theme-plain">
-    <div class="container">
-        <!-- rolling feature pills -->
-      <div class="quick-scroller" aria-hidden="true">
-        <div class="quick-row">
-          <span class="quick-pill">Preventative Maintenance</span>
-          <span class="quick-pill">Damage Protection</span>
-          <span class="quick-pill">Multi-Channel Distribution</span>
-          <span class="quick-pill">Styling & Photography</span>
-          <span class="quick-pill">Dynamic Pricing</span>
-          <span class="quick-pill">24/7 Concierge</span>
-          <!-- duplicate for loop smoothness -->
-          <span class="quick-pill">Preventative Maintenance</span>
-          <span class="quick-pill">Damage Protection</span>
-          <span class="quick-pill">Multi-Channel Distribution</span>
-          <span class="quick-pill">Styling & Photography</span>
-          <span class="quick-pill">Dynamic Pricing</span>
-          <span class="quick-pill">24/7 Concierge</span>
+          <dl class="hero__stats">
+            <div class="stat-card reveal">
+              <dt>97%</dt>
+              <dd>Guest satisfaction across our portfolio</dd>
+            </div>
+            <div class="stat-card reveal" style="--reveal-delay: 120ms;">
+              <dt>120+</dt>
+              <dd>Stays curated and styled for maximum appeal</dd>
+            </div>
+            <div class="stat-card reveal" style="--reveal-delay: 240ms;">
+              <dt>24/7</dt>
+              <dd>On-call guest and owner support</dd>
+            </div>
+          </dl>
         </div>
-      </div>
-      <!-- gently rolling image cards -->
-      <div class="quick-roller">
-        <a class="quick-card-img" href="#appraisal"
-           style="--bg:url('https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1600&q=80')">
-          <div class="overlay">
-            <span class="badge">1</span>
-            <div class="text">
-              <h4>Income Appraisal</h4>
-              <p>Understand your property’s earning potential in minutes.</p>
+
+        <div class="hero__visual">
+          <div class="hero-photo" role="presentation">
+            <div class="floating-card">
+              <span class="floating-eyebrow">Live guest review</span>
+              <p>“Every detail felt intentional. We extended our stay because it felt like home.”</p>
+              <span class="floating-meta">Charlotte • Perth</span>
             </div>
           </div>
-        </a>
-  
-        <a class="quick-card-img" href="#about"
-           style="--bg:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80')">
-          <div class="overlay">
-            <span class="badge">2</span>
-            <div class="text">
-              <h4>Why Home2BNB</h4>
-              <p>Trust, transparency and care — our core promise.</p>
-            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="partner">
+      <div class="container">
+        <div class="section__head">
+          <span class="pill">Why owners choose us</span>
+          <h2>A hospitality-first property partner</h2>
+          <p class="section__lead">We combine boutique design sensibilities with rigorous operations to protect your asset and elevate every stay.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal" style="--bg:url('https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=1600&q=80');">
+            <span class="feature-card__eyebrow">01 • Launch</span>
+            <h3>Design-forward setup</h3>
+            <p>Styling, photography and listing optimization tailored to your market to drive attention and bookings from day one.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--bg:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80'); --reveal-delay: 120ms;">
+            <span class="feature-card__eyebrow">02 • Care</span>
+            <h3>Guest experience obsessed</h3>
+            <p>Hotel-grade cleaning, curated amenities and concierge-level communication that converts guests into repeat advocates.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--bg:url('https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?auto=format&fit=crop&w=1600&q=80'); --reveal-delay: 240ms;">
+            <span class="feature-card__eyebrow">03 • Performance</span>
+            <h3>Transparent, data-led management</h3>
+            <p>Dynamic pricing, preventative maintenance and clean financial reporting that keeps you confident in every decision.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="operations">
+      <div class="container split">
+        <div class="split__content">
+          <span class="pill">Operations that scale</span>
+          <h2>Transparent partnership, grounded in performance</h2>
+          <ul class="checklist">
+            <li class="reveal">Proactive owner updates and monthly performance wrap-ups.</li>
+            <li class="reveal" style="--reveal-delay: 120ms;">Integrated maintenance program with trusted local partners.</li>
+            <li class="reveal" style="--reveal-delay: 240ms;">Revenue strategy informed by live market intelligence.</li>
+            <li class="reveal" style="--reveal-delay: 360ms;">Secure guest screening, deposits and insurance compliance.</li>
+          </ul>
+          <a class="text-link" href="services.html">Explore our full management service <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="split__visual reveal" style="--reveal-delay: 200ms;">
+          <div class="gradient-panel">
+            <h3>What you receive</h3>
+            <ul>
+              <li>Detailed onboarding roadmap</li>
+              <li>Owner portal with live metrics</li>
+              <li>Revenue forecasting &amp; benchmarking</li>
+              <li>Dedicated partnership manager</li>
+            </ul>
           </div>
-        </a>
-  
-        <a class="quick-card-img" href="contact.html"
-           style="--bg:url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1600&q=80')">
-          <div class="overlay">
-            <span class="badge">3</span>
-            <div class="text">
-              <h4>List Your Property</h4>
-              <p>Set, forget & collect — we’ll handle the rest.</p>
-            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gallery" id="portfolio">
+      <div class="container">
+        <div class="section__head">
+          <span class="pill">Curated stays</span>
+          <h2>Curated homes that tell a story</h2>
+          <p class="section__lead">A glimpse inside the residences we style, launch and steward for memorable guest experiences.</p>
+        </div>
+        <div class="property-grid">
+          <article class="property-card reveal" style="--bg:url('https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=1600&q=80');">
+            <span class="property-card__label">Cottesloe • Coastal Retreat</span>
+            <p>Neutral tones, layered textures and a sunlit living space designed for long, languid mornings.</p>
+          </article>
+          <article class="property-card reveal" style="--bg:url('https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1600&q=80'); --reveal-delay: 120ms;">
+            <span class="property-card__label">Fremantle • Heritage Loft</span>
+            <p>Bold art moments and artisan furnishings breathe new life into a historic terrace.</p>
+          </article>
+          <article class="property-card reveal" style="--bg:url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80'); --reveal-delay: 240ms;">
+            <span class="property-card__label">Swan Valley • Vineyard Escape</span>
+            <p>Alfresco entertaining zones and layered landscape lighting for golden-hour storytelling.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="owners">
+      <div class="container split split--reverse">
+        <div class="split__visual reveal">
+          <div class="portrait-card" role="presentation"></div>
+        </div>
+        <div class="split__content">
+          <span class="pill">Owners feel at home</span>
+          <h2>We treat every property as if it were our own</h2>
+          <p>Founders Rachel and Shaun are investors and hosts themselves. We know the care, diligence and responsiveness you expect because we expect it too.</p>
+          <div class="bio-cards">
+            <article class="bio-card reveal">
+              <h3>Rachel Lam</h3>
+              <p>Creative lead behind our signature styling and guest experience program.</p>
+            </article>
+            <article class="bio-card reveal" style="--reveal-delay: 160ms;">
+              <h3>Shaun Sia</h3>
+              <p>Operations &amp; finance partner ensuring every stay performs for owners.</p>
+            </article>
           </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- ===================== ABOUT ===================== -->
-  <section id="about" class="theme-peach section-with-divider">
-    <div class="divider-top">
-      <svg viewBox="0 0 100 8" preserveAspectRatio="none"><polygon points="0,0 100,0 100,8"></polygon></svg>
-    </div>
-    <div class="container">
-      <div class="section-header">
-        <h2>Who We Are</h2>
-        <p class="subtitle">Connecting guests with quality homes and owners with peace of mind.</p>
-      </div>
-
-      <div class="media">
-        <div class="text reveal">
-          <p>Home2BNB stands at the forefront of short-term rental management in Australia. We’re a dedicated team delivering outstanding hospitality for guests and maximised returns for property owners.</p>
-          <p>Our end-to-end service covers meticulous setup, dynamic pricing, 24/7 guest support and professional operations. We blend local expertise with investor-grade discipline so every stay shines and every investment thrives.</p>
-          <a class="btn btn-dark" href="#services">See What We Do</a>
-        </div>
-        <div class="image reveal">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1500&q=80" alt="Team collaborating in a modern office">
+          <a class="btn btn-outline" href="about.html">Meet the founders</a>
         </div>
       </div>
-    </div>
-    <div class="divider-bottom">
-      <svg viewBox="0 0 100 8" preserveAspectRatio="none"><polygon points="0,8 100,0 0,0"></polygon></svg>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===================== KEY FACTS ===================== -->
-  <section class="theme-plain">
-    <div class="container">
-      <div class="section-header">
-        <h2>Key Facts</h2>
-        <p class="subtitle">A few numbers that show our consistency and care.</p>
-      </div>
-      <div class="kpi-grid">
-        <div class="kpi reveal">
-          <div class="kpi-num"><span class="num" data-to="97">0</span><span class="unit">%</span></div>
-          <div class="kpi-label">Average Guest Rating</div>
+    <section class="section section--cta">
+      <div class="container cta-panel">
+        <div class="cta-panel__copy">
+          <span class="pill">Let’s begin</span>
+          <h2>Ready to unlock the next chapter for your property?</h2>
+          <p>Share your goals and we’ll craft a tailored appraisal outlining revenue potential, setup requirements and launch timeline.</p>
         </div>
-        <div class="kpi reveal">
-          <div class="kpi-num"><span class="num" data-to="120">0</span></div>
-          <div class="kpi-label">Properties Styled</div>
-        </div>
-        <div class="kpi reveal">
-          <div class="kpi-num"><span class="num" data-to="24">0</span><span class="unit">/7</span></div>
-          <div class="kpi-label">Guest Support</div>
-        </div>
-        <div class="kpi reveal">
-          <div class="kpi-num"><span class="num" data-to="18">0</span></div>
-          <div class="kpi-label">Suburbs Covered</div>
+        <div class="cta-panel__actions">
+          <a class="btn btn-primary" href="mailto:stay@home2bnb.com.au"><i class="fa-solid fa-envelope"></i> Request an appraisal</a>
+          <a class="btn btn-ghost" href="tel:+61411880646"><i class="fa-solid fa-phone"></i> Call +61 411 880 646</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-
-  <!-- ===================== SERVICES ===================== -->
-  <section id="services" class="theme-sage section-with-divider">
-    <div class="divider-top">
-      <svg viewBox="0 0 100 8" preserveAspectRatio="none"><polygon points="0,0 100,0 0,8"></polygon></svg>
-    </div>
-    <div class="container">
-      <div class="section-header">
-        <h2>Full-Service Short-Stay Management</h2>
-        <p class="subtitle">Everything you need to maximise returns and protect your property — end to end.</p>
-      </div>
-
-      <div id="appraisal" class="cards">
-        <div class="card reveal">
-          <div class="icon">📊</div>
-          <h3>Revenue Appraisal</h3>
-          <p>Data-backed estimate incl. seasonality, occupancy bands and ADR targets.</p>
-        </div>
-        <div class="card reveal">
-          <div class="icon">🎨</div>
-          <h3>Setup & Styling</h3>
-          <p>Interior refresh, professional photography and high-performing listing copy.</p>
-        </div>
-        <div class="card reveal">
-          <div class="icon">💬</div>
-          <h3>Operations & Guest Care</h3>
-          <p>24/7 support, hotel-grade cleaning, linen rotation and proactive maintenance.</p>
-        </div>
-        <div class="card reveal">
-          <div class="icon">🔒</div>
-          <h3>Trust & Compliance</h3>
-          <p>Guest screening, deposits, rule enforcement and clear monthly statements.</p>
-        </div>
-      </div>
-    </div>
-    <div class="divider-bottom">
-      <svg viewBox="0 0 100 8" preserveAspectRatio="none"><polygon points="0,8 100,8 100,0"></polygon></svg>
-    </div>
-  </section>
-
-  <!-- ===================== TESTIMONIALS ===================== -->
-  <section id="testimonials" class="theme-plain">
-    <div class="container">
-      <div class="section-header">
-        <h2>Loved by Guests & Owners</h2>
-        <p class="subtitle">Real words from people who’ve stayed with us — and partnered with us.</p>
-      </div>
-
-      <div class="testimonial-grid">
-        <article class="t-card reveal">
-          <div class="stars" aria-label="5 stars">★★★★★</div>
-          <p>“Flawless communication and a beautiful home. Felt like a boutique hotel — but better.”</p>
-          <div class="t-meta">
-            <div class="avatar">S</div>
-            <div><strong>Sarah L.</strong><br><span class="role">Guest</span></div>
-          </div>
-        </article>
-
-        <article class="t-card reveal">
-          <div class="stars" aria-label="5 stars">★★★★★</div>
-          <p>“Bookings and revenue are up, stress is down. The best decision I’ve made for my investment.”</p>
-          <div class="t-meta">
-            <div class="avatar">R</div>
-            <div><strong>Robert K.</strong><br><span class="role">Property Owner</span></div>
-          </div>
-        </article>
-
-        <article class="t-card reveal">
-          <div class="stars" aria-label="5 stars">★★★★★</div>
-          <p>“They treat the property like their own. Fast support and immaculate turnovers every time.”</p>
-          <div class="t-meta">
-            <div class="avatar">M</div>
-            <div><strong>Michael P.</strong><br><span class="role">Corporate Client</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-<!-- ===================== BEAUTIFUL CTA ===================== -->
-<section class="cta">
-    <div class="cta-bg"
-         style="background-image:url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=2000&q=80')">
-    </div>
-    <div class="cta-inner container">
-      <h2>Ready to unlock your property’s potential?</h2>
-      <p class="subtitle">Get a tailored revenue appraisal and a seamless plan to launch — or level up — your short-stay.</p>
-      <div class="cta-actions">
-        <a class="btn btn-sage" href="mailto:stay@home2bnb.com.au"><i class="fas fa-envelope"></i> Request Appraisal</a>
-        <a class="btn btn-peach" href="tel:+61411880646"><i class="fas fa-phone"></i> Call +61 411 880 646</a>
-      </div>
-    </div>
-  </section>
-  
-  <!-- ===================== BEAUTIFUL FOOTER ===================== -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="Asset 2.png"
-             alt="Home2BNB Logo" class="footer-logo">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <img src="Asset 2.png" alt="Home2BNB secondary logo" />
+          <div class="logo-text">
+            <span class="logo-name">Home2BNB</span>
+            <span class="logo-tagline">Boutique property management</span>
+          </div>
+        </a>
+        <p>Premium short-stay management across Perth and beyond.</p>
       </div>
-  
-      <div class="footer-col">
-        <h5>Company</h5>
+      <div class="footer__column">
+        <h4>Company</h4>
         <ul>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Our Services</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
         </ul>
       </div>
-  
-      <div class="footer-col">
-        <h5>For Owners</h5>
+      <div class="footer__column">
+        <h4>Resources</h4>
         <ul>
-          <li><a href="mailto:stay@home2bnb.com.au">Revenue Appraisal</a></li>
-          <li><a href="services.html">Onboarding</a></li>
-          <li><a href="services.html">Operations</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="services.html#pricing">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-  
-      <div class="footer-col">
-        <h5>Contact</h5>
+      <div class="footer__column">
+        <h4>Get in touch</h4>
         <ul>
           <li><a href="mailto:stay@home2bnb.com.au">stay@home2bnb.com.au</a></li>
           <li><a href="tel:+61411880646">+61 411 880 646</a></li>
@@ -304,129 +240,17 @@
         </ul>
       </div>
     </div>
-  
-    <div class="footer-bottom">
+    <div class="footer__bottom">
       <div class="container">
         <span>© 2025 Home2BNB. All rights reserved.</span>
-        <span class="sep">•</span>
-        <a href="#">Privacy Policy</a>
-        <span class="sep">•</span>
-        <a href="#">Terms of Use</a>
+        <nav aria-label="Legal links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </nav>
       </div>
     </div>
   </footer>
-  
-  
-  <!-- ===================== JS (Counters + Reveal + Parallax) ===================== -->
-  <script>
-    // Counters
-    (function(){
-      const run = (el) => {
-        const to = +el.dataset.to;
-        let cur = 0;
-        const step = Math.max(1, Math.ceil(to / 60));
-        const tick = () => {
-          cur += step;
-          if (cur >= to) { el.textContent = to; return; }
-          el.textContent = cur;
-          requestAnimationFrame(tick);
-        };
-        tick();
-      };
-      const io = new IntersectionObserver((entries)=>{
-        entries.forEach(e=>{
-          if (e.isIntersecting) {
-            const n = e.target.querySelector('.num');
-            if (n) run(n);
-            io.unobserve(e.target);
-          }
-        });
-      }, {threshold: .6});
-      document.querySelectorAll('.kpi').forEach(k=>io.observe(k));
-    })();
 
-    // Reveal on scroll (stagger)
-    (function(){
-      const els = Array.from(document.querySelectorAll('.reveal'));
-      const io = new IntersectionObserver((entries)=>{
-        entries.forEach(e=>{
-          if (e.isIntersecting) {
-            e.target.classList.add('in');
-            io.unobserve(e.target);
-          }
-        });
-      }, {threshold: .2});
-      els.forEach((el, i)=>{
-        el.style.transitionDelay = (i * 40) + 'ms';
-        io.observe(el);
-      });
-    })();
-
-    // Soft parallax for hero + CTA
-    (function(){
-      const ps = document.querySelectorAll('.parallax');
-      const onScroll = () => {
-        const y = window.scrollY;
-        ps.forEach(el=>{
-          el.style.transform = `translateY(${y * -0.08}px) scale(1.06)`;
-        });
-      };
-      onScroll();
-      window.addEventListener('scroll', onScroll, {passive:true});
-    })();
-  </script>
-  <script>
-// ----- ODOMETER BUILD & ROLL -----
-(function(){
-  const buildWheel = (n) => {
-    const w = document.createElement('span');
-    w.className = 'wheel';
-    const d = document.createElement('div');
-    d.className = 'digits';
-    // stack 0..9 vertically twice for seamless roll
-    for (let i=0;i<20;i++){
-      const dd = document.createElement('div');
-      dd.className = 'digit';
-      dd.textContent = i % 10;
-      d.appendChild(dd);
-    }
-    w.appendChild(d);
-    // set target
-    w.dataset.to = n;
-    return w;
-  };
-
-  const initOdo = (el) => {
-    const val = parseInt(el.dataset.value, 10) || 0;
-    const suffix = el.dataset.suffix || '';
-    const digits = String(val).split('');
-    // build wheels
-    el.innerHTML = '';
-    digits.forEach(d => el.appendChild(buildWheel(+d)));
-    if (suffix){ const suf = document.createElement('span'); suf.className='suffix'; suf.textContent = suffix; el.appendChild(suf); }
-    // roll when visible
-    const io = new IntersectionObserver((ents)=>{
-      ents.forEach(e=>{
-        if(!e.isIntersecting) return;
-        const wheels = el.querySelectorAll('.wheel .digits');
-        wheels.forEach((stack,i)=>{
-          const target = +digits[i];           // desired digit
-          const offset = (target + 10) * 2.2;  // 10 (one full set) + target, each row = 2.2rem
-          // convert rem to px using computed font-size to be robust
-          const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
-          stack.style.transform = `translateY(${-offset*rem}px)`;
-          stack.style.transitionDelay = `${i*80}ms`; // slight stagger
-        });
-        io.unobserve(e.target);
-      });
-    }, {threshold:.6});
-    io.observe(el);
-  };
-
-  document.querySelectorAll('.odo').forEach(initOdo);
-})();
-</script>
-
-  <script src="script.js"></script>
+  <script src="boutique-effects.js" defer></script>
 </body>
 </html>

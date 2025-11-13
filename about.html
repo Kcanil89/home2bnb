@@ -7,7 +7,7 @@
   <!-- Font Awesome (icons for CTA buttons, etc.) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Your shared theme file -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20240526" />
 </head>
 <body>
   <!-- ===================== HEADER ===================== -->
@@ -202,15 +202,6 @@
     </div>
   </footer>
 
-  <!-- ===================== Tiny JS (Reveal on scroll) ===================== -->
-  <script>
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){ e.target.classList.add('in'); observer.unobserve(e.target); }
-      });
-    },{threshold:0.15});
-    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-  </script>
-  <script src="script.js"></script>
+  <script src="script.js?v=20240526"></script>
 </body>
 </html>

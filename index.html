@@ -11,7 +11,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20240526" />
 </head>
 <body>
  <!-- ===================== HEADER ===================== -->
@@ -84,7 +84,7 @@
       <!-- gently rolling image cards -->
       <div class="quick-roller">
         <a class="quick-card-img" href="#appraisal"
-           style="--bg:url('https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1600&q=80')">
+           style="--bg:url('https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1600&q=80'); --card-index:0;">
           <div class="overlay">
             <span class="badge">1</span>
             <div class="text">
@@ -95,7 +95,7 @@
         </a>
   
         <a class="quick-card-img" href="#about"
-           style="--bg:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80')">
+           style="--bg:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80'); --card-index:1;">
           <div class="overlay">
             <span class="badge">2</span>
             <div class="text">
@@ -106,7 +106,7 @@
         </a>
   
         <a class="quick-card-img" href="contact.html"
-           style="--bg:url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1600&q=80')">
+           style="--bg:url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1600&q=80'); --card-index:2;">
           <div class="overlay">
             <span class="badge">3</span>
             <div class="text">
@@ -188,25 +188,33 @@
       </div>
 
       <div id="appraisal" class="cards">
-        <div class="card reveal">
-          <div class="icon">📊</div>
-          <h3>Revenue Appraisal</h3>
-          <p>Data-backed estimate incl. seasonality, occupancy bands and ADR targets.</p>
+        <div class="card reveal card-immersive" style="--card-bg:url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1600&q=80'); --reveal-delay: 0ms;">
+          <div class="card-inner">
+            <div class="icon">📊</div>
+            <h3>Revenue Appraisal</h3>
+            <p>Data-backed estimate incl. seasonality, occupancy bands and ADR targets.</p>
+          </div>
         </div>
-        <div class="card reveal">
-          <div class="icon">🎨</div>
-          <h3>Setup & Styling</h3>
-          <p>Interior refresh, professional photography and high-performing listing copy.</p>
+        <div class="card reveal card-immersive" style="--card-bg:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80'); --reveal-delay: 140ms;">
+          <div class="card-inner">
+            <div class="icon">🎨</div>
+            <h3>Setup & Styling</h3>
+            <p>Interior refresh, professional photography and high-performing listing copy.</p>
+          </div>
         </div>
-        <div class="card reveal">
-          <div class="icon">💬</div>
-          <h3>Operations & Guest Care</h3>
-          <p>24/7 support, hotel-grade cleaning, linen rotation and proactive maintenance.</p>
+        <div class="card reveal card-immersive" style="--card-bg:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80'); --reveal-delay: 280ms;">
+          <div class="card-inner">
+            <div class="icon">💬</div>
+            <h3>Operations & Guest Care</h3>
+            <p>24/7 support, hotel-grade cleaning, linen rotation and proactive maintenance.</p>
+          </div>
         </div>
-        <div class="card reveal">
-          <div class="icon">🔒</div>
-          <h3>Trust & Compliance</h3>
-          <p>Guest screening, deposits, rule enforcement and clear monthly statements.</p>
+        <div class="card reveal card-immersive" style="--card-bg:url('https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1600&q=80'); --reveal-delay: 420ms;">
+          <div class="card-inner">
+            <div class="icon">🔒</div>
+            <h3>Trust & Compliance</h3>
+            <p>Guest screening, deposits, rule enforcement and clear monthly statements.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -357,7 +365,9 @@
         });
       }, {threshold: .2});
       els.forEach((el, i)=>{
-        el.style.transitionDelay = (i * 40) + 'ms';
+        if (!el.style.getPropertyValue('--reveal-delay')) {
+          el.style.setProperty('--reveal-delay', (i * 60) + 'ms');
+        }
         io.observe(el);
       });
     })();
@@ -427,6 +437,6 @@
 })();
 </script>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20240526"></script>
 </body>
 </html>

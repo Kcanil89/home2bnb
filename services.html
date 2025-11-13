@@ -59,35 +59,26 @@
     </div>
 
     <div class="container reveal">
-      <div class="property-grid" id="steps">
-        <!-- 1 -->
-        <a class="property-card step-card active" href="#income-appraisal">
-          <div style="display:flex;gap:14px;align-items:center;padding:16px">
-            <span class="brand-mark" style="min-width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-weight:900;color:#fff;background:linear-gradient(135deg,#7A8581,#F3D8CD)">1</span>
-            <div>
-              <h4 style="margin:0 0 4px;">Income Appraisal</h4>
-              <p style="margin:0;color:var(--ink-2)">Understand your property’s earning potential in minutes.</p>
-            </div>
+      <div class="cards step-card-grid" id="steps">
+        <a class="card-immersive reveal step-card" href="#income-appraisal" style="--card-bg:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80'); --reveal-delay:0ms;">
+          <div class="card-inner">
+            <span class="step-index">1</span>
+            <h3>Income Appraisal</h3>
+            <p>Understand your property’s earning potential in minutes.</p>
           </div>
         </a>
-        <!-- 2 -->
-        <a class="property-card step-card" href="#why-h2b">
-          <div style="display:flex;gap:14px;align-items:center;padding:16px">
-            <span class="brand-mark" style="min-width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-weight:900;color:#fff;background:linear-gradient(135deg,#7A8581,#F3D8CD)">2</span>
-            <div>
-              <h4 style="margin:0 0 4px;">Why Home2BNB</h4>
-              <p style="margin:0;color:var(--ink-2)">Trust, transparency and care — our core promise.</p>
-            </div>
+        <a class="card-immersive reveal step-card" href="#why-h2b" style="--card-bg:url('https://images.unsplash.com/photo-1522770179533-24471fcdba45?auto=format&fit=crop&w=1600&q=80'); --reveal-delay:160ms;">
+          <div class="card-inner">
+            <span class="step-index">2</span>
+            <h3>Why Home2BNB</h3>
+            <p>Trust, transparency and care — our core promise.</p>
           </div>
         </a>
-        <!-- 3 -->
-        <a class="property-card step-card" href="#list-property">
-          <div style="display:flex;gap:14px;align-items:center;padding:16px">
-            <span class="brand-mark" style="min-width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-weight:900;color:#fff;background:linear-gradient(135deg,#7A8581,#F3D8CD)">3</span>
-            <div>
-              <h4 style="margin:0 0 4px;">List Your Property</h4>
-              <p style="margin:0;color:var(--ink-2)">Set, forget & collect — we’ll handle the rest.</p>
-            </div>
+        <a class="card-immersive reveal step-card" href="#list-property" style="--card-bg:url('https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=1600&q=80'); --reveal-delay:320ms;">
+          <div class="card-inner">
+            <span class="step-index">3</span>
+            <h3>List Your Property</h3>
+            <p>Set, forget &amp; collect — we’ll handle the rest.</p>
           </div>
         </a>
       </div>
@@ -301,11 +292,12 @@
   </footer>
 
 
-  <!-- Tiny JS: rolling cards + reveal -->
+  <!-- Tiny JS: rolling cards -->
   <script>
     // Auto-cycle "How it works" cards
     (function () {
       const cards = [...document.querySelectorAll('.step-card')];
+      if (!cards.length) return;
       let i = 0;
       setInterval(() => {
         cards.forEach(c => c.classList.remove('active'));
@@ -313,14 +305,6 @@
         i++;
       }, 3200);
     })();
-
-    // Reveal on scroll
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){ e.target.classList.add('in'); observer.unobserve(e.target); }
-      });
-    },{threshold:0.15});
-    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
   </script>
   <style>
     /* small visual emphasis when a step-card is "active" */

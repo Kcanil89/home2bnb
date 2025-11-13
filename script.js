@@ -33,4 +33,24 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('resize', () => {
     if (window.matchMedia('(min-width: 768px)').matches) closeMenu();
   });
+
+  const reveals = document.querySelectorAll('.reveal');
+  if (reveals.length) {
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries, io) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          });
+        },
+        { rootMargin: '0px 0px -10% 0px', threshold: 0.2 }
+      );
+
+      reveals.forEach((el) => observer.observe(el));
+    } else {
+      reveals.forEach((el) => el.classList.add('in'));
+    }
+  }
 });

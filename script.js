@@ -1,6 +1,3 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navMenu = document.querySelector('.nav-menu');
-const body = document.body;
 
 document.addEventListener('DOMContentLoaded', function () {
   const navToggle = document.querySelector('.nav-toggle');
@@ -32,33 +29,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   navMenu.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-      navToggle.setAttribute('aria-expanded', 'false');
-      navMenu.classList.remove('is-open');
-      body.classList.remove('nav-open');
+      // Only close on mobile (when toggle is visible)
+      if (window.getComputedStyle(navToggle).display === 'none') return;
+      closeMenu();
     });
   });
-}
 
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.2,
-      rootMargin: '0px 0px -40px 0px',
-    }
-  );
-
-  document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-} else {
-  document.querySelectorAll('.reveal').forEach((el) => {
-    el.classList.add('is-visible');
+  // Sync with your CSS breakpoint (768px here)
+  window.addEventListener('resize', () => {
+    if (window.matchMedia('(min-width: 768px)').matches) closeMenu();
   });
 
   const reveals = document.querySelectorAll('.reveal');

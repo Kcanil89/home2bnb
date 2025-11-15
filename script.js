@@ -40,10 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (window.matchMedia('(min-width: 768px)').matches) closeMenu();
   });
 
-  window.addEventListener('keyup', (event) => {
-    if (event.key === 'Escape') closeMenu();
-  });
-
   const reveals = document.querySelectorAll('.reveal');
   if (reveals.length) {
     if ('IntersectionObserver' in window) {

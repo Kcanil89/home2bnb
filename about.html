@@ -3,22 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>About – Home2BNB</title>
-  <!-- Font Awesome (icons for CTA buttons, etc.) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Your shared theme file -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- ===================== HEADER ===================== -->
   <header class="main-header">
     <div class="container header-container">
-      <a href="index.html" class="logo">
-        <img src="Asset 1.png" alt="Home2BNB Logo" />
+      <a href="index.html" class="logo" aria-label="Home2BNB home">
+        <img src="Asset 1.png" alt="Home2BNB logo" />
+        <div class="logo-text">
+          <span class="logo-name">Home2BNB</span>
+          <span class="logo-tagline">Hospitality-led property management</span>
+        </div>
       </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
-        <span class="sr-only">Menu</span>
         <span class="nav-toggle-icon" aria-hidden="true">
           <span></span>
           <span></span>
@@ -34,155 +40,160 @@
           <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="faqs.html">FAQs</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a class="btn btn-sage" href="https://book.hostfully.com/home2bnb">Book a Stay</a></li>
+          <li class="cta"><a class="btn btn-primary" href="https://book.hostfully.com/home2bnb">List your property</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- ===================== HERO ===================== -->
-  <section class="hero theme-plain">
-    <div class="bg cta-bg" style="background-image:url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=2000&q=80');"></div>
-    <div class="content">
-      <span class="pill">Perth • Short-stay specialists</span>
-      <h1>Creating homes away from home</h1>
-      <p>We manage premium short-stay properties with honesty, care and a laser-focus on great guest experiences and owner returns.</p>
-    </div>
-    <div class="divider-bottom">
-      <svg viewBox="0 0 100 10" preserveAspectRatio="none"><polygon points="0,0 100,0 100,10"></polygon></svg>
-    </div>
-  </section>
-
-  <!-- ===================== OUR MISSION ===================== -->
-<section class="theme-peach">
-  <div class="container section-header reveal">
-    <h2>Our Mission</h2>
-    <p class="subtitle">To be Perth’s most reputable short-term accommodation specialist.</p>
-  </div>
-
-  <div class="container reveal mission-grid">
-    <!-- Left Card -->
-    <div class="mission-card">
-      <span class="pill"><span class="check"></span> Our Mission</span>
-      <h3 class="mission-title">Be Perth’s most reputable short-term accommodation specialist</h3>
-
-      <p><strong>For Clients:</strong> We are dedicated to providing a guaranteed and consistent flow of rental income with a tenant you can trust. Your trust in us is built on honest, transparent communication and our unwavering commitment to service when managing your investment property.</p>
-
-      <p><strong>For Guests:</strong> We deliver a superior quality “home away from home” experience. Our goal is to make every stay a 5-star experience through responsive communication, anticipating needs, sharing the best of the locality, and ensuring value for money.</p>
-
-      <h4 class="principle-heading">Our Key Principles</h4>
-      <ul class="principles-list">
-        <li><span class="badge">1</span> Treat clients' properties as our own — we protect and elevate every investment.</li>
-        <li><span class="badge">2</span> Create genuine comfort for guests with quality furnishings and thoughtful touches.</li>
-        <li><span class="badge">3</span> Communicate with honesty, transparency, and care — building lasting trust.</li>
-      </ul>
-    </div>
-
-    <!-- Right Card -->
-    <div class="mission-card">
-      <span class="pill"><span class="check"></span> Why Owners Choose Us</span>
-      <ul class="principles-list">
-        <li><span class="badge">✓</span> Tailored revenue strategies for each property</li>
-        <li><span class="badge">✓</span> Hotel-grade cleaning and linen program</li>
-        <li><span class="badge">✓</span> Proactive maintenance and guest screening</li>
-        <li><span class="badge">✓</span> Transparent reporting and owner portal access</li>
-      </ul>
-      <div class="mission-illustration">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Modern interior with warm lighting">
-      </div>
-    </div>
-  </div>
-
-  <div class="divider-bottom">
-    <svg viewBox="0 0 100 10" preserveAspectRatio="none">
-      <polygon points="0,0 100,0 100,10"></polygon>
-    </svg>
-  </div>
-</section>
-
-
-  <!-- ===================== WHO WE ARE ===================== -->
-  <section class="theme-plain">
-    <div class="container section-header reveal">
-      <h2>Who we are</h2>
-      <p class="subtitle">Property investors, hosts and operators with a guest-first mindset.</p>
-    </div>
-
-    <!-- Founder: Rachel -->
-    <div class="container">
-      <div class="media reveal">
-        <div class="image">
-          <img src="https://home2bnb.com.au/wp-content/uploads/elementor/thumbs/Rachel-2small--o8asxg1kfr8x8tw1uc7tyou9i415flg201jntnlvi0.jpg" alt="Rachel Lam">
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div>
+          <span class="pill">Our story</span>
+          <h1>Creating homes away from home</h1>
+          <p>We founded Home2BNB to bring hotel-level care to privately owned residences. Every stay is shaped by hospitality, transparency and performance so owners and guests feel genuinely looked after.</p>
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="contact.html">Partner with us</a>
+            <a class="btn btn-ghost" href="services.html">What we deliver</a>
+          </div>
+          <div class="page-hero__meta">
+            <div class="meta-card">
+              <strong>2017</strong>
+              <span>Founded in Perth with a guest-first mindset</span>
+            </div>
+            <div class="meta-card">
+              <strong>120+</strong>
+              <span>Homes styled, launched and continuously optimised</span>
+            </div>
+          </div>
         </div>
-        <div class="text">
-          <h2>Rachel Lam</h2>
-          <h5 class="subtitle pill" style="margin-top:6px">Founder / Managing Director</h5>
-          <p>I love anything related to homes and properties! From investing, renovating, building, styling and interior design, management — I have experienced all of it through my own portfolio of properties through the years. I have a keen eye on quality designs, furnishings and home styling.</p>
-          <p>Having worked in the Financial Service industry for 10 years, I strongly believe in delivering excellent customer satisfaction and service to my business partners and clients to ensure long standing relationships built on trust and commitment.</p>
-          <p>From all that I have experienced, I have seen an opportunity in the market where property investors should be and can be getting better returns from their investment property. This is why I created HOME2BNB combining my passion for homes and my ability to partner with clients to achieve successful outcomes.</p>
-          <p>And if the above wasn’t enough, I have 2 adorable boys and my husband Shaun who always keeps me on my toes.</p>
+        <div class="page-hero__visual" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80');"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-grid content-grid--two">
+        <div>
+          <span class="pill">Mission</span>
+          <h2>Our mission</h2>
+          <p>To be Perth’s most reputable short-stay accommodation specialist by elevating homes into memorable stays and protecting every owner’s investment.</p>
+          <div class="highlight-band">
+            <h3>Our key principles</h3>
+            <ul>
+              <li>Treat every property as if it were our own.</li>
+              <li>Create genuine comfort through thoughtful design details.</li>
+              <li>Communicate with honesty, transparency and care.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-stack">
+          <article class="card">
+            <span class="pill">For owners</span>
+            <h3>Performance built on trust</h3>
+            <p>We deliver consistent rental income with proactive updates and detailed reporting so you always know how your property is performing.</p>
+          </article>
+          <article class="card">
+            <span class="pill">For guests</span>
+            <h3>Thoughtful, effortless stays</h3>
+            <p>From curated amenities to rapid-response support, we design each stay to feel warm, generous and seamless.</p>
+          </article>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Founder: Shaun -->
-    <div class="container">
-      <div class="media reveal">
-        <div class="text">
-          <h2>Shaun Sia</h2>
-          <h5 class="subtitle pill" style="margin-top:6px">Co-Founder / Director</h5>
-          <p>My career started over 17 years ago in professional services as a Financial Auditor. Since then, I have worked in various roles and for a range of clients around the world starting from small local companies to large multinationals.</p>
-          <p>Shortly into my working career I bought my first investment property. Without any real experience and much to the surprise of family and friends, I hands on endeavored on a top-to-bottom renovation. That experience was one of the most hair pulling yet fulfilling challenges in my life. This was the step that ignited my passion for properties and development. Since then I have renovated more homes, built new and developed blocks in the Perth Metro area.</p>
-          <p>From all my successful encounters, I have taken away one key lesson — trust is king. Trust in someone is based on their ability to demonstrate they genuinely care about your success.</p>
-          <p>My wife and I founded this company from our passion for property, our genuine focus on our clients’ success and our belief that Perth is a beautiful place to come and stay a while.</p>
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section__head">
+          <span class="pill">Founders</span>
+          <h2>Hospitality is personal to us</h2>
+          <p class="section__lead">Rachel and Shaun combine design sensibility, financial acumen and hands-on property experience to steward your investment.</p>
         </div>
-        <div class="image">
-          <img src="https://home2bnb.com.au/wp-content/uploads/elementor/thumbs/SS-small-o8anxoerdf5qtl0gk4tgljxnk830bis4a9xmnk5fi0.png" alt="Shaun Sia">
+        <div class="card-stack content-grid--two">
+          <article class="card profile-card reveal">
+            <img src="https://home2bnb.com.au/wp-content/uploads/elementor/thumbs/Rachel-2small--o8asxg1kfr8x8tw1uc7tyou9i415flg201jntnlvi0.jpg" alt="Rachel Lam portrait">
+            <div>
+              <h3>Rachel Lam</h3>
+              <span>Founder / Managing Director</span>
+              <p>Rachel has renovated, styled and managed her own portfolio for over a decade. She leads our design language and guest experience, ensuring every property feels intentional and welcoming.</p>
+            </div>
+          </article>
+          <article class="card profile-card reveal" style="--reveal-delay: 160ms;">
+            <img src="https://home2bnb.com.au/wp-content/uploads/elementor/thumbs/SS-small-o8anxoerdf5qtl0gk4tgljxnk830bis4a9xmnk5fi0.png" alt="Shaun Sia portrait">
+            <div>
+              <h3>Shaun Sia</h3>
+              <span>Co-Founder / Director</span>
+              <p>Shaun brings global financial expertise and a builder’s mindset. He oversees operations, compliance and owner communications to keep every stay running smoothly.</p>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===================== CTA ===================== -->
-  <section class="cta">
-    <div class="cta-bg" style="background-image:url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=2000&q=80')"></div>
-    <div class="cta-inner container">
-      <h2>Ready to unlock your property’s potential?</h2>
-      <p class="subtitle">Get a tailored revenue appraisal and a seamless plan to launch — or level up — your short-stay.</p>
-      <div class="cta-actions">
-        <a class="btn btn-sage" href="mailto:stay@home2bnb.com.au"><i class="fas fa-envelope"></i> Request Appraisal</a>
-        <a class="btn btn-peach" href="tel:+61411880646"><i class="fas fa-phone"></i> Call +61 411 880 646</a>
+    <section class="section">
+      <div class="container content-grid content-grid--two">
+        <div>
+          <span class="pill">Why it matters</span>
+          <h2>We see every detail through the lens of hospitality</h2>
+          <p>From first consultation to guest checkout, our team orchestrates each moment with empathy. You gain a trusted partner who cares about experience, reputation and returns in equal measure.</p>
+        </div>
+        <div class="card highlight-band">
+          <h3>What our owners value most</h3>
+          <ul>
+            <li>Direct access to our founders and operations team.</li>
+            <li>Tailored revenue strategies grounded in market insight.</li>
+            <li>Hotel-grade housekeeping, maintenance and guest care.</li>
+          </ul>
+          <a class="text-link" href="testimonials.html">Read owner testimonials <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===================== FOOTER ===================== -->
+    <section class="section section--cta">
+      <div class="container cta-panel">
+        <div class="cta-panel__copy">
+          <span class="pill">Let’s begin</span>
+          <h2>Ready to welcome your next guests?</h2>
+          <p>We’ll build a tailored roadmap for onboarding, styling, pricing and long-term growth of your short-stay property.</p>
+        </div>
+        <div class="cta-panel__actions">
+          <a class="btn btn-primary" href="mailto:stay@home2bnb.com.au"><i class="fa-solid fa-envelope"></i> Request an appraisal</a>
+          <a class="btn btn-ghost" href="tel:+61411880646"><i class="fa-solid fa-phone"></i> Call +61 411 880 646</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="Asset 2.png" alt="Home2BNB Logo" class="footer-logo">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <img src="Asset 2.png" alt="Home2BNB secondary logo" />
+          <div class="logo-text">
+            <span class="logo-name">Home2BNB</span>
+            <span class="logo-tagline">Boutique property management</span>
+          </div>
+        </a>
+        <p>Premium short-stay management across Perth and beyond.</p>
       </div>
-
-      <div class="footer-col">
-        <h5>Company</h5>
+      <div class="footer__column">
+        <h4>Company</h4>
         <ul>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Our Services</a></li>
-          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
         </ul>
       </div>
-
-      <div class="footer-col">
-        <h5>For Owners</h5>
+      <div class="footer__column">
+        <h4>Resources</h4>
         <ul>
-          <li><a href="index.html#appraisal">Revenue Appraisal</a></li>
-          <li><a href="services.html">Onboarding</a></li>
-          <li><a href="services.html">Operations</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="services.html#pricing">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-
-      <div class="footer-col">
-        <h5>Contact</h5>
+      <div class="footer__column">
+        <h4>Get in touch</h4>
         <ul>
           <li><a href="mailto:stay@home2bnb.com.au">stay@home2bnb.com.au</a></li>
           <li><a href="tel:+61411880646">+61 411 880 646</a></li>
@@ -190,27 +201,17 @@
         </ul>
       </div>
     </div>
-
-    <div class="footer-bottom">
+    <div class="footer__bottom">
       <div class="container">
         <span>© 2025 Home2BNB. All rights reserved.</span>
-        <span class="sep">•</span>
-        <a href="#">Privacy Policy</a>
-        <span class="sep">•</span>
-        <a href="#">Terms of Use</a>
+        <nav aria-label="Legal links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </nav>
       </div>
     </div>
   </footer>
 
-  <!-- ===================== Tiny JS (Reveal on scroll) ===================== -->
-  <script>
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){ e.target.classList.add('in'); observer.unobserve(e.target); }
-      });
-    },{threshold:0.15});
-    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-  </script>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

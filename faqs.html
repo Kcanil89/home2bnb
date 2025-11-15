@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FAQs — Home2BNB</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,23 +12,12 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="container header-container">
-      <a href="index.html" class="logo">
-        <img src="Asset 1.png" alt="Home2BNB logo" />
-        <div class="logo-text">
-          <span class="logo-name">Home2BNB</span>
-          <span class="logo-tagline">Hospitality-led property management</span>
-        </div>
-      </a>
-
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="Asset 1.png" alt="Home2BNB" /></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
-        <span class="nav-toggle-icon" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-icon"></span>
       </button>
-
       <nav class="nav-menu" id="primary-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -37,122 +26,130 @@
           <li><a href="testimonials.html">Testimonials</a></li>
           <li class="is-active"><a href="faqs.html">FAQs</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li class="cta"><a class="btn btn-primary" href="https://book.hostfully.com/home2bnb">List your property</a></li>
+          <li><a class="btn btn-primary" href="https://book.hostfully.com/home2bnb">Book a Stay</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <span class="pill">FAQs</span>
-          <h1>Answers to our most common owner questions</h1>
-          <p class="lead">We believe in transparent partnerships. If you don’t see your question here, our team is ready to help.</p>
-          <div class="hero__actions">
-            <a class="btn btn-primary" href="contact.html">Ask a question</a>
-          </div>
-        </div>
-        <div class="hero__visual">
-          <div class="hero-photo" style="background-image: url('https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1200&q=80');"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--soft">
-      <div class="container">
-        <div class="section__head">
-          <span class="pill">Owner FAQs</span>
-          <h2>All the details on working with Home2BNB</h2>
-        </div>
-        <div class="panel">
-          <details class="faq-item reveal" open>
-            <summary>How quickly can we launch once we sign on?</summary>
-            <p>Most homes go live within four to six weeks depending on styling requirements. We’ll map a detailed launch schedule during onboarding so you can follow every milestone.</p>
-          </details>
-          <details class="faq-item reveal" style="--reveal-delay: 120ms;">
-            <summary>Do you handle furnishing and procurement?</summary>
-            <p>Yes. Our styling team designs mood boards, sources furnishings and coordinates delivery. We’ll work within your budget to achieve a cohesive, durable look.</p>
-          </details>
-          <details class="faq-item reveal" style="--reveal-delay: 240ms;">
-            <summary>Which platforms will feature my property?</summary>
-            <p>We list across Airbnb, Booking.com, Stayz and luxury booking networks as appropriate. Our direct booking engine is also available for repeat guests.</p>
-          </details>
-          <details class="faq-item reveal" style="--reveal-delay: 360ms;">
-            <summary>How do you price stays?</summary>
-            <p>We combine market data, competitor benchmarking and seasonal insights to set optimal nightly rates. Rates are updated weekly and major events trigger real-time adjustments.</p>
-          </details>
-          <details class="faq-item reveal" style="--reveal-delay: 480ms;">
-            <summary>What does your fee include?</summary>
-            <p>Our management fee covers marketing, guest communications, revenue management, maintenance coordination and reporting. Styling updates and major repairs are scoped separately.</p>
-          </details>
-          <details class="faq-item reveal" style="--reveal-delay: 600ms;">
-            <summary>Can I stay in my own property?</summary>
-            <p>Absolutely. We reserve owner stays through our portal so you can plan personal visits without disrupting guest bookings.</p>
-          </details>
+    <section class="hero hero-subpage">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="hero-tag">FAQ</span>
+          <h1>Answers to the questions we hear most.</h1>
+          <p>From onboarding to owner reporting, these are the details that help you decide if Home2BNB is the right fit.</p>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="section__head">
-          <span class="pill">Guest FAQs</span>
-          <h2>Supporting exceptional stays from enquiry to checkout</h2>
+        <div class="section-header">
+          <span class="section-label">Management</span>
+          <h2>Working with Home2BNB</h2>
+          <p>Understand how we partner with owners and what you can expect day to day.</p>
         </div>
-        <div class="panel">
-          <details class="faq-item reveal">
-            <summary>What’s included in the Home2BNB welcome?</summary>
-            <p>Guests receive a personalised digital guidebook, curated welcome gifts, premium linens and on-call concierge assistance throughout their stay.</p>
-          </details>
-          <details class="faq-item reveal" style="--reveal-delay: 160ms;">
-            <summary>How do you handle after-hours requests?</summary>
-            <p>Our team monitors communications 24/7. Whether it’s late check-in support or concierge recommendations, we respond within minutes.</p>
-          </details>
-          <details class="faq-item reveal" style="--reveal-delay: 320ms;">
-            <summary>Do you allow pets or special events?</summary>
-            <p>Many homes welcome small pets and intimate gatherings. We review each request individually to protect the property and ensure a great experience.</p>
-          </details>
-          <details class="faq-item reveal" style="--reveal-delay: 480ms;">
-            <summary>What if something goes wrong during a stay?</summary>
-            <p>Preventative maintenance keeps surprises rare, but if anything happens our operations team coordinates repairs immediately and supports guests with alternatives.</p>
-          </details>
+        <div class="accordion">
+          <div class="accordion-item">
+            <h3>How quickly can we launch once we sign?</h3>
+            <p>Most properties go live within four to six weeks. Styling, photography and compliance are scheduled immediately so we can launch with confidence.</p>
+          </div>
+          <div class="accordion-item">
+            <h3>What makes your guest experience different?</h3>
+            <p>We offer concierge-level service—pre-arrival planning, curated local experiences and on-call support. It’s how we maintain 97% average review scores.</p>
+          </div>
+          <div class="accordion-item">
+            <h3>Do I get to approve bookings?</h3>
+            <p>Yes. You choose your involvement level. Many owners trust us to screen and approve guests, while others prefer to review every reservation via the owner portal.</p>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Financials</span>
+          <h2>Revenue and reporting</h2>
+          <p>We make sure the numbers are transparent and accessible, always.</p>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <h3>How are payouts handled?</h3>
+            <p>Owner payouts are processed monthly with a full statement outlining revenue, expenses and performance commentary. You’ll also see live data inside the portal.</p>
+          </div>
+          <div class="accordion-item">
+            <h3>Do you charge any onboarding fees?</h3>
+            <p>We provide a customised onboarding plan with transparent costs for styling, photography and setup. Our management fee is performance-aligned with no hidden extras.</p>
+          </div>
+          <div class="accordion-item">
+            <h3>How do you handle taxes and compliance?</h3>
+            <p>We partner with local experts to ensure GST, council registrations and insurance are up to date. We’ll guide you through the paperwork so nothing is missed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-section">
+        <div class="copy">
+          <span class="section-label">Still curious?</span>
+          <h3>Let’s talk through your specific goals.</h3>
+          <p>Every property is unique. We’re happy to answer deeper questions, run tailored projections or workshop styling ideas before you commit.</p>
+          <div class="cta-actions" style="margin-top:24px;">
+            <a class="btn btn-primary" href="mailto:stay@home2bnb.com.au"><i class="fa-solid fa-envelope"></i> Email the team</a>
+            <a class="btn btn-outline" href="contact.html"><i class="fa-solid fa-calendar"></i> Schedule a call</a>
+          </div>
+        </div>
+        <figure class="media">
+          <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80" alt="Consultation meeting" />
+        </figure>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer__grid">
-      <div>
-        <a href="index.html" class="logo" aria-label="Home2BNB home">
-          <img src="Asset 2.png" alt="Home2BNB icon" />
-          <div class="logo-text">
-            <span class="logo-name">Home2BNB</span>
-            <span class="logo-tagline">Hospitality-led property management</span>
-          </div>
-        </a>
-        <p>Premium short-stay management for design-led homes across Western Australia.</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="Asset 2.png" alt="Home2BNB" class="footer-logo" />
+        <p>Perth’s boutique team crafting exceptional short-stay experiences and dependable investment returns.</p>
       </div>
-      <div>
-        <h3>Visit</h3>
-        <p>Studio 4, 128 St Georges Terrace<br />Perth WA 6000</p>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
       </div>
-      <div>
-        <h3>Contact</h3>
-        <p><a href="tel:+61412345678">+61 412 345 678</a><br /><a href="mailto:hello@home2bnb.com">hello@home2bnb.com</a></p>
+      <div class="footer-col">
+        <h5>For Owners</h5>
+        <ul>
+          <li><a href="index.html#services">Management Approach</a></li>
+          <li><a href="services.html">Revenue Strategy</a></li>
+          <li><a href="faqs.html">Frequently Asked Questions</a></li>
+        </ul>
       </div>
-      <div>
-        <h3>Follow</h3>
-        <p><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a><br /><a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a></p>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="mailto:stay@home2bnb.com.au">stay@home2bnb.com.au</a></li>
+          <li><a href="tel:+61411880646">+61 411 880 646</a></li>
+          <li>Perth, Western Australia</li>
+        </ul>
       </div>
     </div>
-    <div class="container">
-      <small>© <span id="year">2024</span> Home2BNB. All rights reserved.</small>
+    <div class="container footer-bottom">
+      <span>© 2025 Home2BNB. All rights reserved.</span>
+      <span>
+        <a href="#">Privacy Policy</a>
+        <span>•</span>
+        <a href="#">Terms of Use</a>
+      </span>
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>

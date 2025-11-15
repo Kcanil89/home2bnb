@@ -3,32 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Home2BNB</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-d5w9qBcY9qsK0kGugHgdGXNq35p3xNmPR9U1FVLtZL1NVr7DiIP9N6byjHgNsx3Rp3XIanFkFJxsk7ujI8B+Ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Contact – Home2BNB</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="main-header">
-    <div class="container header-container">
-      <a href="index.html" class="logo">
-        <img src="Asset 1.png" alt="Home2BNB logo" />
-        <div class="logo-text">
-          <span class="logo-name">Home2BNB</span>
-          <span class="logo-tagline">Hospitality-led property management</span>
-        </div>
-      </a>
-
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="Asset 1.png" alt="Home2BNB" /></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
-        <span class="nav-toggle-icon" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-icon"></span>
       </button>
-
       <nav class="nav-menu" id="primary-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -37,64 +23,69 @@
           <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="faqs.html">FAQs</a></li>
           <li class="is-active"><a href="contact.html">Contact</a></li>
-          <li class="cta"><a class="btn btn-primary" href="https://book.hostfully.com/home2bnb">List your property</a></li>
+          <li><a class="btn btn-primary" href="https://book.hostfully.com/home2bnb">Book a Stay</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <span class="pill">Connect with us</span>
-          <h1>Let’s design a profitable stay experience together</h1>
-          <p class="lead">Share a few details and our team will deliver a tailored proposal outlining styling recommendations, launch timing and expected returns.</p>
-        </div>
-        <div class="hero__visual">
-          <div class="hero-photo" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80');"></div>
+    <section class="hero hero-subpage">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="hero-tag">Connect</span>
+          <h1>We’d love to hear about your property.</h1>
+          <p>Tell us about your goals and we’ll respond within one business day with next steps.</p>
         </div>
       </div>
     </section>
 
-    <section class="section section--soft">
+    <section class="section">
       <div class="container contact-grid">
         <div class="contact-card">
-          <h3>Book a consultation</h3>
-          <p>Email us anytime or call between 8am–6pm AWST and we’ll respond within the hour.</p>
-          <p><a href="mailto:hello@home2bnb.com"><i class="fa-solid fa-envelope"></i> hello@home2bnb.com</a></p>
-          <p><a href="tel:+61412345678"><i class="fa-solid fa-phone"></i> +61 412 345 678</a></p>
-          <p><i class="fa-solid fa-location-dot"></i> Studio 4, 128 St Georges Terrace, Perth WA 6000</p>
-          <h3>Connect</h3>
-          <p><a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
-          <p><a href="https://www.facebook.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
+          <h2>Let’s start the conversation</h2>
+          <p>Reach out via email or phone, or request a tailored appraisal. We’re based in Perth and available for site visits across Western Australia.</p>
+          <div>
+            <strong>Email</strong><br />
+            <a href="mailto:stay@home2bnb.com.au">stay@home2bnb.com.au</a>
+          </div>
+          <div>
+            <strong>Phone</strong><br />
+            <a href="tel:+61411880646">+61 411 880 646</a>
+          </div>
+          <div>
+            <strong>Location</strong><br />
+            Perth, Western Australia
+          </div>
+          <div>
+            <strong>Follow</strong><br />
+            <a href="https://www.instagram.com/home2bnb" target="_blank" rel="noopener">@home2bnb</a>
+          </div>
         </div>
-        <div class="contact-card">
-          <h3>Tell us about your property</h3>
-          <form class="contact-form" action="#" method="post">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Sarah Johnson" required />
 
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com" required />
-
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" placeholder="+61" />
-
-            <label for="location">Property location</label>
-            <input id="location" name="location" type="text" placeholder="Suburb / Region" />
-
-            <label for="timeline">Ideal go-live date</label>
-            <select id="timeline" name="timeline">
-              <option value="soon">Within 30 days</option>
-              <option value="quarter">Next 3 months</option>
-              <option value="six">3–6 months</option>
-              <option value="unsure">Still exploring</option>
-            </select>
-
-            <label for="message">Tell us more</label>
-            <textarea id="message" name="message" placeholder="Share your goals, property highlights or questions."></textarea>
-
+        <div class="form-card">
+          <h2>Send us a message</h2>
+          <form>
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" placeholder="Optional" />
+            </label>
+            <label>
+              Property location
+              <input type="text" name="location" placeholder="Suburb or address" />
+            </label>
+            <label>
+              How can we help?
+              <textarea name="message" placeholder="Tell us about your property, goals or questions" required></textarea>
+            </label>
             <button class="btn btn-primary" type="submit">Submit enquiry</button>
           </form>
         </div>
@@ -102,36 +93,47 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer__grid">
-      <div>
-        <a href="index.html" class="logo" aria-label="Home2BNB home">
-          <img src="Asset 2.png" alt="Home2BNB icon" />
-          <div class="logo-text">
-            <span class="logo-name">Home2BNB</span>
-            <span class="logo-tagline">Hospitality-led property management</span>
-          </div>
-        </a>
-        <p>Premium short-stay management for design-led homes across Western Australia.</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="Asset 2.png" alt="Home2BNB" class="footer-logo" />
+        <p>Perth’s boutique team crafting exceptional short-stay experiences and dependable investment returns.</p>
       </div>
-      <div>
-        <h3>Visit</h3>
-        <p>Studio 4, 128 St Georges Terrace<br />Perth WA 6000</p>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
       </div>
-      <div>
-        <h3>Contact</h3>
-        <p><a href="tel:+61412345678">+61 412 345 678</a><br /><a href="mailto:hello@home2bnb.com">hello@home2bnb.com</a></p>
+      <div class="footer-col">
+        <h5>For Owners</h5>
+        <ul>
+          <li><a href="index.html#services">Management Approach</a></li>
+          <li><a href="services.html">Revenue Strategy</a></li>
+          <li><a href="faqs.html">Frequently Asked Questions</a></li>
+        </ul>
       </div>
-      <div>
-        <h3>Follow</h3>
-        <p><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a><br /><a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a></p>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="mailto:stay@home2bnb.com.au">stay@home2bnb.com.au</a></li>
+          <li><a href="tel:+61411880646">+61 411 880 646</a></li>
+          <li>Perth, Western Australia</li>
+        </ul>
       </div>
     </div>
-    <div class="container">
-      <small>© <span id="year">2024</span> Home2BNB. All rights reserved.</small>
+    <div class="container footer-bottom">
+      <span>© 2025 Home2BNB. All rights reserved.</span>
+      <span>
+        <a href="#">Privacy Policy</a>
+        <span>•</span>
+        <a href="#">Terms of Use</a>
+      </span>
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js?v=20240526"></script>
 </body>
 </html>

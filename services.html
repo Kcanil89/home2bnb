@@ -3,32 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Services — Home2BNB</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-d5w9qBcY9qsK0kGugHgdGXNq35p3xNmPR9U1FVLtZL1NVr7DiIP9N6byjHgNsx3Rp3XIanFkFJxsk7ujI8B+Ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Services – Home2BNB</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="main-header">
-    <div class="container header-container">
-      <a href="index.html" class="logo">
-        <img src="Asset 1.png" alt="Home2BNB logo" />
-        <div class="logo-text">
-          <span class="logo-name">Home2BNB</span>
-          <span class="logo-tagline">Hospitality-led property management</span>
-        </div>
-      </a>
-
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="Asset 1.png" alt="Home2BNB" /></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
-        <span class="nav-toggle-icon" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-icon"></span>
       </button>
-
       <nav class="nav-menu" id="primary-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -37,172 +23,192 @@
           <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="faqs.html">FAQs</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li class="cta"><a class="btn btn-primary" href="https://book.hostfully.com/home2bnb">List your property</a></li>
+          <li><a class="btn btn-primary" href="https://book.hostfully.com/home2bnb">Book a Stay</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <span class="pill">Our services</span>
-          <h1>A full-service partner for your short-stay investment</h1>
-          <p class="lead">From styling to guest communications, we orchestrate the entire experience so your property performs like a flagship hotel suite.</p>
-          <div class="hero__actions">
-            <a class="btn btn-primary" href="contact.html">Request a proposal</a>
-            <a class="btn btn-ghost" href="#workflow">View our process</a>
-          </div>
+    <section class="hero hero-subpage">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="hero-tag">Our capabilities</span>
+          <h1>Considered services across the full short-stay lifecycle.</h1>
+          <p>We combine hospitality, design and operations expertise to deliver a turnkey management experience that reflects your brand and protects your investment.</p>
         </div>
-        <div class="hero__visual">
-          <div class="hero-photo" style="background-image: url('https://images.unsplash.com/photo-1600585154340-0ef3c08bb017?auto=format&fit=crop&w=1200&q=80');"></div>
-        </div>
+        <div class="page-hero__visual" style="background-image:url('https://images.unsplash.com/photo-1521790361543-f645cf042ec4?auto=format&fit=crop&w=1600&q=80');"></div>
       </div>
     </section>
 
-    <section class="section section--soft" id="workflow">
+    <section class="section">
       <div class="container">
-        <div class="section__head">
-          <span class="pill">Launch workflow</span>
-          <h2>Every new home follows our proven five-step framework</h2>
-          <p class="section__lead">Meticulous preparation ensures a stand-out first impression and sustained performance.</p>
+        <div class="section-header">
+          <span class="section-label">Core pillars</span>
+          <h2>Where we focus to elevate every stay</h2>
+          <p>Our multidisciplinary team works in tandem to ensure each property is impeccably presented, actively marketed and meticulously maintained.</p>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card reveal" style="--bg:url('https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c?auto=format&fit=crop&w=1600&q=80');">
-            <span class="feature-card__eyebrow">Step 01</span>
-            <h3>Design immersion</h3>
-            <p>We map your brand story, audience and revenue goals before creating mood boards and sourcing inventories.</p>
+        <div class="card-grid">
+          <article class="card">
+            <span class="pill">Design &amp; Launch</span>
+            <h3>Foundations for performance</h3>
+            <p>Interior styling, procurement, photography, compliance and channel deployment led by our in-house specialists.</p>
+            <ul>
+              <li>Design consultation and mood-boarding</li>
+              <li>Furniture, linen &amp; amenity sourcing</li>
+              <li>Brand-aligned copywriting &amp; photography</li>
+            </ul>
           </article>
-          <article class="feature-card reveal" style="--bg:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80'); --reveal-delay: 120ms;">
-            <span class="feature-card__eyebrow">Step 02</span>
-            <h3>Styling &amp; staging</h3>
-            <p>Our team installs furnishings, art and amenities, then coordinates editorial photography and copywriting.</p>
+          <article class="card">
+            <span class="pill">Operations</span>
+            <h3>Everyday excellence</h3>
+            <p>We take care of guests and homes with five-star standards—coordinating every clean, inspection and maintenance touchpoint.</p>
+            <ul>
+              <li>Hotel-grade housekeeping &amp; linen</li>
+              <li>24/7 guest concierge &amp; triage</li>
+              <li>Preventative maintenance program</li>
+            </ul>
           </article>
-          <article class="feature-card reveal" style="--bg:url('https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1600&q=80'); --reveal-delay: 240ms;">
-            <span class="feature-card__eyebrow">Step 03</span>
-            <h3>Listing optimisation</h3>
-            <p>We syndicate listings across key channels, activate smart pricing and launch strategic marketing campaigns.</p>
-          </article>
-          <article class="feature-card reveal" style="--bg:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80'); --reveal-delay: 360ms;">
-            <span class="feature-card__eyebrow">Step 04</span>
-            <h3>Guest experience</h3>
-            <p>24/7 concierge support, digital guidebooks and thoughtful touches deliver glowing reviews and repeat bookings.</p>
-          </article>
-          <article class="feature-card reveal" style="--bg:url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1600&q=80'); --reveal-delay: 480ms;">
-            <span class="feature-card__eyebrow">Step 05</span>
-            <h3>Performance insights</h3>
-            <p>Monthly reporting, revenue forecasting and proactive recommendations keep your asset outperforming the market.</p>
+          <article class="card">
+            <span class="pill">Revenue</span>
+            <h3>Insights that compound</h3>
+            <p>Continuous pricing intelligence and transparent reporting ensure your property keeps outperforming the market.</p>
+            <ul>
+              <li>Dynamic pricing &amp; demand forecasting</li>
+              <li>Multi-channel optimisation</li>
+              <li>Owner reporting &amp; benchmarking</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="inclusions">
-      <div class="container split">
-        <div class="split__content">
-          <span class="pill">What’s included</span>
-          <h2>Built for busy owners who expect boutique standards</h2>
-          <p>Choose your level of involvement. We handle the rest with a team that thrives on premium service.</p>
-          <a class="text-link" href="contact.html">Discuss a tailored package <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div class="split__visual">
-          <div class="duo-grid">
-            <div class="panel reveal">
-              <h3>Foundation management</h3>
-              <ul>
-                <li>Revenue strategy &amp; distribution</li>
-                <li>Guest screening &amp; communications</li>
-                <li>Cleaning, laundry &amp; restocking</li>
-                <li>Owner portal with live metrics</li>
-              </ul>
-            </div>
-            <div class="panel reveal" style="--reveal-delay: 160ms;">
-              <h3>Premium enhancements</h3>
-              <ul>
-                <li>Interior styling refreshes</li>
-                <li>Photography &amp; videography updates</li>
-                <li>Concierge itinerary planning</li>
-                <li>Guest gifting &amp; amenity sourcing</li>
-              </ul>
-            </div>
-            <div class="panel reveal" style="--reveal-delay: 320ms;">
-              <h3>Asset stewardship</h3>
-              <ul>
-                <li>Preventative maintenance scheduling</li>
-                <li>On-call trade coordination</li>
-                <li>Inventory audits &amp; replacements</li>
-                <li>Insurance and compliance support</li>
-              </ul>
-            </div>
-            <div class="panel reveal" style="--reveal-delay: 480ms;">
-              <h3>Revenue acceleration</h3>
-              <ul>
-                <li>Quarterly performance workshops</li>
-                <li>Channel diversification strategies</li>
-                <li>Seasonal campaign management</li>
-                <li>Partnership activations &amp; PR</li>
-              </ul>
-            </div>
+    <section class="section">
+      <div class="container split-section">
+        <figure class="media">
+          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80" alt="Stylised bedroom" />
+        </figure>
+        <div class="copy">
+          <span class="section-label">Service approach</span>
+          <h3>Intentionally boutique, relentlessly professional.</h3>
+          <p>Our scale lets us be selective, ensuring each home receives care from a dedicated pod of specialists. You get the sophistication of a national operator with the attentiveness of an owner-led studio.</p>
+          <div class="feature-list">
+            <div class="feature-item">Bespoke welcome rituals and amenity curation to reflect your property’s story.</div>
+            <div class="feature-item">Proprietary checklists spanning 120+ touchpoints per stay.</div>
+            <div class="feature-item">Local partnerships with chefs, stylists and experiences on demand.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--soft" id="guarantee">
-      <div class="container split">
-        <div class="split__visual reveal" style="--reveal-delay: 120ms;">
-          <div class="hero-photo" style="background-image: url('https://images.unsplash.com/photo-1488716820095-cbe80883c496?auto=format&fit=crop&w=1200&q=80');"></div>
+    <section class="section" aria-label="Our process">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-label">Our process</span>
+          <h2>A structured journey from appraisal to loyal guests</h2>
+          <p>We guide you through each milestone with clarity, collaboration and prompt execution.</p>
         </div>
-        <div class="split__content">
-          <span class="pill">Our promise</span>
-          <h2>Confidence backed by performance guarantees</h2>
-          <p>We track success through occupancy, nightly rate growth and guest sentiment. If we don’t meet the targets we agree together, our team steps in with complimentary strategy sessions and operational upgrades until we’re back on track.</p>
-          <div class="duo-grid">
-            <div class="panel reveal">
-              <h3>Performance benchmarks</h3>
-              <p>Market-aligned nightly rate targets and occupancy thresholds updated every quarter.</p>
+        <div class="steps-list">
+          <div class="step">
+            <div class="step-header">
+              <span class="step-number">01</span>
+              <h3>Discovery &amp; feasibility</h3>
             </div>
-            <div class="panel reveal" style="--reveal-delay: 160ms;">
-              <h3>Owner advocacy</h3>
-              <p>A dedicated partnership manager who provides monthly recommendations and rapid escalation support.</p>
+            <p>We analyse your property’s potential, market positioning and investment goals to determine the ideal short-stay strategy.</p>
+          </div>
+          <div class="step">
+            <div class="step-header">
+              <span class="step-number">02</span>
+              <h3>Design &amp; readiness</h3>
             </div>
+            <p>Our team styles, sources and installs everything required for launch, followed by professional storytelling and photography.</p>
+          </div>
+          <div class="step">
+            <div class="step-header">
+              <span class="step-number">03</span>
+              <h3>Launch &amp; optimisation</h3>
+            </div>
+            <p>We deploy your listing across premium channels, manage guest communications and continually tune pricing for performance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Owner partnership">
+      <div class="container split-section">
+        <div class="copy">
+          <span class="section-label">For owners</span>
+          <h3>Clarity and confidence from day one.</h3>
+          <p>You’ll always know how your property is tracking with scheduled reviews, transparent financials and a direct line to your management pod.</p>
+          <div class="feature-list">
+            <div class="feature-item">Quarterly performance deep-dives with action plans.</div>
+            <div class="feature-item">Owner portal with live availability, statements and maintenance logs.</div>
+            <div class="feature-item">Flexible service add-ons from styling refreshes to capital works coordination.</div>
+          </div>
+        </div>
+        <figure class="media">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" alt="Owners collaborating" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-label="CTA">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Let’s unlock the next level of your property.</h2>
+            <p>Share your objectives and we’ll craft a bespoke management proposal within 48 hours.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-light" href="mailto:stay@home2bnb.com.au"><i class="fa-solid fa-envelope"></i> stay@home2bnb.com.au</a>
+            <a class="btn btn-outline" href="contact.html"><i class="fa-solid fa-calendar"></i> Arrange a meeting</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer__grid">
-      <div>
-        <a href="index.html" class="logo" aria-label="Home2BNB home">
-          <img src="Asset 2.png" alt="Home2BNB icon" />
-          <div class="logo-text">
-            <span class="logo-name">Home2BNB</span>
-            <span class="logo-tagline">Hospitality-led property management</span>
-          </div>
-        </a>
-        <p>Premium short-stay management for design-led homes across Western Australia.</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="Asset 2.png" alt="Home2BNB" class="footer-logo" />
+        <p>Perth’s boutique team crafting exceptional short-stay experiences and dependable investment returns.</p>
       </div>
-      <div>
-        <h3>Visit</h3>
-        <p>Studio 4, 128 St Georges Terrace<br />Perth WA 6000</p>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
       </div>
-      <div>
-        <h3>Contact</h3>
-        <p><a href="tel:+61412345678">+61 412 345 678</a><br /><a href="mailto:hello@home2bnb.com">hello@home2bnb.com</a></p>
+      <div class="footer-col">
+        <h5>For Owners</h5>
+        <ul>
+          <li><a href="index.html#services">Management Approach</a></li>
+          <li><a href="services.html">Revenue Strategy</a></li>
+          <li><a href="faqs.html">Frequently Asked Questions</a></li>
+        </ul>
       </div>
-      <div>
-        <h3>Follow</h3>
-        <p><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a><br /><a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a></p>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="mailto:stay@home2bnb.com.au">stay@home2bnb.com.au</a></li>
+          <li><a href="tel:+61411880646">+61 411 880 646</a></li>
+          <li>Perth, Western Australia</li>
+        </ul>
       </div>
     </div>
-    <div class="container">
-      <small>© <span id="year">2024</span> Home2BNB. All rights reserved.</small>
+    <div class="container footer-bottom">
+      <span>© 2025 Home2BNB. All rights reserved.</span>
+      <span>
+        <a href="#">Privacy Policy</a>
+        <span>•</span>
+        <a href="#">Terms of Use</a>
+      </span>
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>

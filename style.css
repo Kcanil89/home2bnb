@@ -1912,4 +1912,9 @@ form textarea {
 .contact-grid {
   margin-top: clamp(12px, 2vw, 20px);
 }
+#primary-menu > ul > li:nth-child(7) > a{
+  color: white;
+  padding-bottom: 10px;
+}
+
 

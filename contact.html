@@ -8,87 +8,157 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="main-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html"><img src="Asset 1.png" alt="Home2BNB" /></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="nav-icon"></span>
-      </button>
-      <nav class="nav-menu" id="primary-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="faqs.html">FAQs</a></li>
-          <li class="is-active"><a href="contact.html">Contact</a></li>
-          <li><a class="btn btn-primary" href="https://book.hostfully.com/home2bnb">Book a Stay</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="main-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <img src="Asset 1.png" alt="Home2BNB" />
+    </a>
+
+    <button class="nav-toggle" type="button"
+            aria-expanded="false"
+            aria-controls="primary-menu"
+            aria-label="Toggle navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="nav-icon"></span>
+    </button>
+
+    <nav class="nav-menu" id="primary-menu">
+      <ul>
+        <!-- add class="is-active" to the current page's li -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a class="btn btn-primary" href="https://book.hostfully.com/home2bnb"
+             target="_blank" rel="noopener">
+            Book a Stay
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <main>
-    <section class="hero hero-subpage">
+    <!-- HERO -->
+    <section class="hero hero-subpage hero-contact">
+      <div
+        class="hero-bg parallax"
+        data-parallax-depth="0.05"
+        style="background-image:url('https://images.pexels.com/photos/8293773/pexels-photo-8293773.jpeg?auto=compress&cs=tinysrgb&w=1600');"
+      ></div>
+
       <div class="container hero-inner">
-        <div class="hero-copy">
+        <div class="hero-copy reveal">
           <span class="hero-tag">Connect</span>
           <h1>We’d love to hear about your property.</h1>
-          <p>Tell us about your goals and we’ll respond within one business day with next steps.</p>
+          <p>
+            Tell us about your goals and we’ll respond within one business day with next steps.
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- CONTACT GRID -->
     <section class="section">
       <div class="container contact-grid">
-        <div class="contact-card">
-          <h2>Let’s start the conversation</h2>
-          <p>Reach out via email or phone, or request a tailored appraisal. We’re based in Perth and available for site visits across Western Australia.</p>
-          <div>
-            <strong>Email</strong><br />
-            <a href="mailto:stay@home2bnb.com.au">stay@home2bnb.com.au</a>
-          </div>
-          <div>
-            <strong>Phone</strong><br />
-            <a href="tel:+61411880646">+61 411 880 646</a>
-          </div>
-          <div>
-            <strong>Location</strong><br />
-            Perth, Western Australia
-          </div>
-          <div>
-            <strong>Follow</strong><br />
-            <a href="https://www.instagram.com/home2bnb" target="_blank" rel="noopener">@home2bnb</a>
+        <!-- LEFT: contact details -->
+        <div class="contact-card reveal">
+          <h2>Let’s start the conversation.</h2>
+          <p>
+            Reach out via email or phone, or request a tailored appraisal. We’re based in Perth and available
+            for site visits across Western Australia.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <div>
+                <strong>Email</strong><br />
+                <a href="mailto:stay@home2bnb.com.au">stay@home2bnb.com.au</a>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div>
+                <strong>Phone</strong><br />
+                <a href="tel:+61411880646">+61 411 880 646</a>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div>
+                <strong>Location</strong><br />
+                Perth, Western Australia
+              </div>
+            </div>
+            <div class="feature-item">
+              <div>
+                <strong>Follow</strong><br />
+                <a href="https://instagram.com/home2bnb" target="_blank" rel="noopener">@home2bnb</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="form-card">
-          <h2>Send us a message</h2>
-          <form>
+        <!-- RIGHT: form -->
+        <div class="form-card reveal">
+          <h2>Send us a message.</h2>
+          <form action="#" method="post">
             <label>
               Name
               <input type="text" name="name" placeholder="Your full name" required />
             </label>
+
             <label>
               Email
               <input type="email" name="email" placeholder="you@example.com" required />
             </label>
+
             <label>
               Phone
               <input type="tel" name="phone" placeholder="Optional" />
             </label>
+
             <label>
               Property location
               <input type="text" name="location" placeholder="Suburb or address" />
             </label>
+
             <label>
               How can we help?
               <textarea name="message" placeholder="Tell us about your property, goals or questions" required></textarea>
             </label>
-            <button class="btn btn-primary" type="submit">Submit enquiry</button>
+
+            <button type="submit" class="btn btn-primary" style="margin: 20px;">
+              Submit enquiry
+            </button>
           </form>
         </div>
+      </div>
+    </section>
+
+    <!-- OPTIONAL LITTLE REASSURANCE STRIP -->
+    <section class="section theme-peach">
+      <div class="container split-section">
+        <div class="copy reveal">
+          <span class="section-label">For owners</span>
+          <h3>Not sure where to start?</h3>
+          <p>
+            Share a few details about your property and we’ll outline options—from a simple performance review
+            through to full management.
+          </p>
+          <p>
+            There’s no obligation; we’re happy to simply point you in the right direction.
+          </p>
+        </div>
+
+        <figure class="media reveal">
+          <img
+            src="https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="Owner meeting with the Home2BNB team"
+          />
+        </figure>
       </div>
     </section>
   </main>
@@ -110,13 +180,13 @@
       <div class="footer-col">
         <h5>For Owners</h5>
         <ul>
-          <li><a href="index.html#services">Management Approach</a></li>
-          <li><a href="services.html">Revenue Strategy</a></li>
+          <li><a href="services.html">Management Approach</a></li>
+          <li><a href="faqs.html">Revenue Strategy</a></li>
           <li><a href="faqs.html">Frequently Asked Questions</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Connect</h5>
+        <h5>Contact</h5>
         <ul>
           <li><a href="mailto:stay@home2bnb.com.au">stay@home2bnb.com.au</a></li>
           <li><a href="tel:+61411880646">+61 411 880 646</a></li>
@@ -128,12 +198,12 @@
       <span>© 2025 Home2BNB. All rights reserved.</span>
       <span>
         <a href="#">Privacy Policy</a>
-        <span>•</span>
+        <span class="sep">•</span>
         <a href="#">Terms of Use</a>
       </span>
     </div>
   </footer>
 
-  <script src="script.js?v=20240526"></script>
+  <script src="script.js"></script>
 </body>
 </html>

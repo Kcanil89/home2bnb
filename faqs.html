@@ -8,99 +8,168 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="main-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html"><img src="Asset 1.png" alt="Home2BNB" /></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="nav-icon"></span>
-      </button>
-      <nav class="nav-menu" id="primary-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li class="is-active"><a href="faqs.html">FAQs</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a class="btn btn-primary" href="https://book.hostfully.com/home2bnb">Book a Stay</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="main-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <img src="Asset 1.png" alt="Home2BNB" />
+    </a>
+
+    <button class="nav-toggle" type="button"
+            aria-expanded="false"
+            aria-controls="primary-menu"
+            aria-label="Toggle navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="nav-icon"></span>
+    </button>
+
+    <nav class="nav-menu" id="primary-menu">
+      <ul>
+        <!-- add class="is-active" to the current page's li -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a class="btn btn-primary" href="https://book.hostfully.com/home2bnb"
+             target="_blank" rel="noopener">
+            Book a Stay
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
   <main>
-    <section class="hero hero-subpage">
+    <!-- HERO -->
+    <section class="hero hero-subpage hero-faqs">
+      <div
+        class="hero-bg parallax"
+        data-parallax-depth="0.05"
+        style="background-image:url('https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=1600');"
+      ></div>
+
       <div class="container hero-inner">
-        <div class="hero-copy">
+        <div class="hero-copy reveal">
           <span class="hero-tag">FAQ</span>
           <h1>Answers to the questions we hear most.</h1>
-          <p>From onboarding to owner reporting, these are the details that help you decide if Home2BNB is the right fit.</p>
+          <p>
+            From onboarding to owner reporting, these are the details that help you decide if Home2BNB is
+            the right fit.
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- MANAGEMENT -->
     <section class="section">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal">
           <span class="section-label">Management</span>
-          <h2>Working with Home2BNB</h2>
-          <p>Understand how we partner with owners and what you can expect day to day.</p>
+          <h2>Working with Home2BNB.</h2>
+          <p>
+            Understand how we partner with owners and what you can expect day to day.
+          </p>
         </div>
-        <div class="accordion">
-          <div class="accordion-item">
+
+        <div class="accordion reveal">
+          <article class="accordion-item">
             <h3>How quickly can we launch once we sign?</h3>
-            <p>Most properties go live within four to six weeks. Styling, photography and compliance are scheduled immediately so we can launch with confidence.</p>
-          </div>
-          <div class="accordion-item">
+            <p>
+              Most properties go live within four to six weeks. Styling, photography and compliance are scheduled
+              immediately so we can launch with confidence.
+            </p>
+          </article>
+
+          <article class="accordion-item">
             <h3>What makes your guest experience different?</h3>
-            <p>We offer concierge-level service—pre-arrival planning, curated local experiences and on-call support. It’s how we maintain 97% average review scores.</p>
-          </div>
-          <div class="accordion-item">
+            <p>
+              We offer concierge-level service—pre-arrival planning, curated local experiences and on-call support.
+              It’s how we maintain 97% average review scores.
+            </p>
+          </article>
+
+          <article class="accordion-item">
             <h3>Do I get to approve bookings?</h3>
-            <p>Yes. You choose your involvement level. Many owners trust us to screen and approve guests, while others prefer to review every reservation via the owner portal.</p>
-          </div>
+            <p>
+              Yes. You choose your involvement level. Many owners trust us to screen and approve guests, while
+              others prefer to review every reservation via the owner portal.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- FINANCIALS -->
+    <section class="section theme-peach">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal">
           <span class="section-label">Financials</span>
-          <h2>Revenue and reporting</h2>
-          <p>We make sure the numbers are transparent and accessible, always.</p>
+          <h2>Revenue and reporting.</h2>
+          <p>
+            We make sure the numbers are transparent and accessible, always.
+          </p>
         </div>
-        <div class="accordion">
-          <div class="accordion-item">
+
+        <div class="accordion reveal">
+          <article class="accordion-item">
             <h3>How are payouts handled?</h3>
-            <p>Owner payouts are processed monthly with a full statement outlining revenue, expenses and performance commentary. You’ll also see live data inside the portal.</p>
-          </div>
-          <div class="accordion-item">
+            <p>
+              Owner payouts are processed monthly with a full statement outlining revenue, expenses and performance
+              commentary. You’ll also see live data inside the portal.
+            </p>
+          </article>
+
+          <article class="accordion-item">
             <h3>Do you charge any onboarding fees?</h3>
-            <p>We provide a customised onboarding plan with transparent costs for styling, photography and setup. Our management fee is performance-aligned with no hidden extras.</p>
-          </div>
-          <div class="accordion-item">
+            <p>
+              We provide a customised onboarding plan with transparent costs for styling, photography and setup.
+              Our management fee is performance-aligned with no hidden extras.
+            </p>
+          </article>
+
+          <article class="accordion-item">
             <h3>How do you handle taxes and compliance?</h3>
-            <p>We partner with local experts to ensure GST, council registrations and insurance are up to date. We’ll guide you through the paperwork so nothing is missed.</p>
-          </div>
+            <p>
+              We partner with local experts to ensure GST, council registrations and insurance are up to date.
+              We’ll guide you through the paperwork so nothing is missed.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
+    <!-- CTA SPLIT -->
     <section class="section">
-      <div class="container split-section">
-        <div class="copy">
+      <div class="container faq-cta split-section">
+        <div class="copy reveal">
           <span class="section-label">Still curious?</span>
           <h3>Let’s talk through your specific goals.</h3>
-          <p>Every property is unique. We’re happy to answer deeper questions, run tailored projections or workshop styling ideas before you commit.</p>
-          <div class="cta-actions" style="margin-top:24px;">
-            <a class="btn btn-primary" href="mailto:stay@home2bnb.com.au"><i class="fa-solid fa-envelope"></i> Email the team</a>
-            <a class="btn btn-outline" href="contact.html"><i class="fa-solid fa-calendar"></i> Schedule a call</a>
+          <p>
+            Every property is unique. We’re happy to answer deeper questions, run tailored projections or
+            workshop styling ideas before you commit.
+          </p>
+
+          <div class="cta-actions" style="margin-top:20px;">
+            <a class="btn btn-primary" href="mailto:stay@home2bnb.com.au">
+              <i class="fa-solid fa-envelope"></i>
+              Email the team
+            </a>
+            <a class="btn btn-outline" href="contact.html">
+              <i class="fa-solid fa-phone"></i>
+              Schedule a call
+            </a>
           </div>
         </div>
-        <figure class="media">
-          <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80" alt="Consultation meeting" />
+
+        <figure class="media reveal">
+          <img
+            src="https://images.pexels.com/photos/5699475/pexels-photo-5699475.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="Home2BNB team discussing an owner’s goals"
+          />
         </figure>
       </div>
     </section>
@@ -123,13 +192,13 @@
       <div class="footer-col">
         <h5>For Owners</h5>
         <ul>
-          <li><a href="index.html#services">Management Approach</a></li>
-          <li><a href="services.html">Revenue Strategy</a></li>
+          <li><a href="services.html">Management Approach</a></li>
+          <li><a href="faqs.html">Revenue Strategy</a></li>
           <li><a href="faqs.html">Frequently Asked Questions</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Connect</h5>
+        <h5>Contact</h5>
         <ul>
           <li><a href="mailto:stay@home2bnb.com.au">stay@home2bnb.com.au</a></li>
           <li><a href="tel:+61411880646">+61 411 880 646</a></li>
@@ -141,7 +210,7 @@
       <span>© 2025 Home2BNB. All rights reserved.</span>
       <span>
         <a href="#">Privacy Policy</a>
-        <span>•</span>
+        <span class="sep">•</span>
         <a href="#">Terms of Use</a>
       </span>
     </div>
